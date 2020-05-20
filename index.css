@@ -32,6 +32,67 @@ body hr {
   }
 }
 
+@media screen and (max-width: 1549px){
+  .sidemenuparent {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 1550px){
+  .mainparent{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+  }
+
+  .mainpageparent{
+    border:solid 6px #fafafa;
+    width: 77%;
+    float: left;
+    margin: 30px 20px;
+  }
+
+  .mainpage {
+    border:solid 2px #ededed;
+  }
+
+  .sidemenuparent{
+    border:solid 6px #fafafa;
+    width: 20%;
+    height: 992px;
+    float: right;
+    margin: 30px 20px;
+  }
+
+  .sidemenu{
+    border:solid 2px #ededed;
+  }
+
+  .sidemenu {
+    color: #595959;
+  }
+
+  .UserGuidecont hr{
+    border:solid 0.5px #a1a1a1;
+  }
+}
+
+.UserGuide p{
+  margin: 12px 16px;
+  font-size: 21px;
+}
+
+.sidemenu hr{
+  margin: 5px 8px;
+}
+
+.UserGuidecont p{
+  margin: 10px 22px;
+  font-size: 19px;
+}
+
+
 .main {
   margin: 0px 15px;
 }
@@ -145,7 +206,7 @@ body hr {
 
 @media only screen and (min-width: 850px) {
 .news {
-  margin: 0px 300px;
+  margin: 0px 80px;
 }
 }
 

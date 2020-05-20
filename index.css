@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body hr {
+  margin: 15px 30px;
+}
+
+.header {
+  background-color: #2C2F33;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-text h1 {
+  font-size: 45px;
+  color: #ffffff;
+  padding: 15px 0px 15px 15px;
+}
+
+.header-btn {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px){
+  .header-btn {
+    display:none;
+  }
+}
+
+.main {
+  margin: 0px 15px;
+}
+
+.main-title1 {
+  text-align: center;
+  font-size: 35px;
+  margin: 5px;
+  color: #333333;
+}
+
+.main-title2 {
+  text-align: center;
+  font-size: 20px;
+  margin:10px;
+  color: #333333;
+  line-height: 1.5em
+}
+
+.more a {
+  text-align: center;
+  font-size: 18px;
+  margin: 5px;
+  color: #11618c;
+  text-decoration: none;
+}
+
+.more {
+  text-align: center;
+  font-size: 18px;
+  margin: 5px;
+  color: #11618c;
+}
+
+.btn {
+  text-align: center;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.point {
+  text-align: center;
+  padding: 20px;
+  color: #333333;
+  margin: 0px 20px;
+}
+
+.points {
+  display: inline-block;
+  padding: 20px;
+}
+
+.point-icon {
+  font-size: 130px;
+}
+
+.point-title {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.point-text {
+  font-size: 18px;
+  max-width: 250px;
+  line-height: 1.2em;
+}
+
+.menu {
+  text-align: center;
+  padding: 20px;
+  color: #333333;
+}
+
+.menu a {
+  color: #11618c;
+  text-decoration: none;
+}
+
+.menu-item {
+  display: inline-block;
+  padding:  20px;
+}
+
+.menu-icon {
+  font-size: 70px;
+  margin: 13px;
+}
+
+.menu-text {
+  font-size: 19px;
+  margin: 18px;
+  display: inline-block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 850px) {
+.news {
+  margin: 0px 300px;
+}
+}
+
+.news h2 {
+  margin: 0px 47px;
+  font-size: 22px;
+  color: #333333;
+}
+
+.news hr {
+  margin: 10px 40px;
+}
+
+.news p {
+  margin: 0px 50px 0px 50px;
+  font-size: 19px;
+  color: #333333;
+}
+
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin: 15px;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #0090aa;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.footer {
+  background-color: #424242;
+  height: 140px;
+  display: inline-block;
+  width: 100%;
+}
+
+.footer h1 {
+  font-size: 30px;
+  padding: 30px 10px 30px 30px;
+  color: #ffffff;
+  width: 250px;
+}
+
+.footer-1 {
+  display: flex;
+  justify-content:center;
+}
+
+.footer-child p {
+  color: #fff;
+  font-size: 20px;
+  margin: 0px 20px;
+  width: 250px;
+}
+
+.footer-child a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 20px;
+  width: 70px;
+}

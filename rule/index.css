@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
+}
+
+body hr {
+  margin: 0px 20px;
+}
+
+body a {
+  color: #11618c;
+}
+
+.header {
+  background-color: #2C2F33;
+  height: 75px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header-text h1 {
+  font-size: 45px;
+  color: #ffffff;
+  padding: 15px 0px 15px 15px;
+}
+
+.global {
+  background-color: #4d5259;
+  height: 38px;
+}
+.global li {
+    float: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.global a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.title {
+  margin: 20px 30px;
+  font-size: 30px;
+}
+
+.sub-title {
+  margin :10px 30px;
+  font-size: 19px;
+}
+.rule {
+  margin: 20px;
+  font-size: 18px;
+  background-color: #fafafa
+}
+
+.rule-text {
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.7em;
+}
+
+.rule-text h2 {
+  margin: 10px 5px;
+  font-size: 22px;
+}
+
+.gen {
+  font-size: 22px;
+  margin: 30px 0px 0px 30px;
+}
+
+.applywaku {
+  padding: 0px 20px;
+}
+.apply input {
+  display: inline-block;
+}
+.apply {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #00BCD4;
+    background: #e4fcff;/*背景色*/
+    border-top: solid 6px #1dc1d6;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.apply p {
+    margin: 0;
+    padding: 0;
+}
+.apply input {
+    margin: 0;
+    padding: 0;
+}
+
+/** チェックOFFなら非表示 */
+.toggle-term{
+  display: none;
+}
+/** チェックONなら表示 */
+input:checked ~ .toggle-term{
+  display: block;
+}
+
+/** チェックボックス横にラベル表示 */
+[type="checkbox"].toggle-rule{
+  position: relative;
+  padding-top: 3px;
+  width: 18px;
+  height: 18px;
+}
+[type="checkbox"].toggle-rule:after{
+  display: inline-block;
+  content: "上記ルールを熟読し、理解しました";
+  position: absolute;
+  width: 350px; height: 25px;
+  padding-left: 20px;
+  font-size: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/** チェックOFFなら非表示 */
+.password{
+  display: none;
+}
+/** チェックONなら表示 */
+input:checked ~ .password{
+  display: block;
+}
+
+/** チェックボックス横にラベル表示 */
+[type="checkbox"].toggle-term2{
+  position: relative;
+  padding-top: 3px;
+  width: 18px;
+  height: 18px;
+}
+[type="checkbox"].toggle-term2:after{
+  content: "利用規約に同意します。";
+  position: absolute;
+  width: 350px; height: 25px;
+  padding-left: 20px;
+  font-size: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.password p {
+  margin:10px;
+  font-size: 15px;
+}
+
+.footer {
+  background-color: #424242;
+  height: 140px;
+  display: inline-block;
+  width: 100%;
+}
+
+.footer h1 {
+  font-size: 30px;
+  padding: 30px 10px 30px 30px;
+  color: #ffffff;
+  width: 250px;
+}
+
+.footer-1 {
+  display: flex;
+  justify-content:center;
+}
+
+.footer-child p {
+  color: #fff;
+  font-size: 20px;
+  margin: 0px 20px;
+  width: 250px;
+}
+
+.footer-child a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 20px;
+  width: 70px;
+}

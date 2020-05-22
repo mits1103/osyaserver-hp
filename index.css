@@ -76,6 +76,11 @@ body hr {
   .UserGuidecont hr{
     border:solid 0.5px #a1a1a1;
   }
+
+  .UserGuidecont a{
+    text-decoration: none;
+    color: #595959;
+  }
 }
 
 .UserGuide p{

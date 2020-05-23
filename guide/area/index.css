@@ -7,6 +7,10 @@ body hr {
   margin: 15px 30px;
 }
 
+.header a{
+    text-decoration: none;
+}
+
 @media screen and (min-width: 769px){
 .header {
   background-color: #2C2F33;
@@ -330,6 +334,10 @@ border-bottom: solid 3px #516ab6;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
+}
+
+.footer a{
+  text-decoration: none;
 }
 
 .footer {

@@ -4,6 +4,10 @@ body {
   color: #333333;
 }
 
+.header a{
+    text-decoration: none;
+}
+
 @media screen and (min-width: 769px){
 .header {
   background-color: #2C2F33;

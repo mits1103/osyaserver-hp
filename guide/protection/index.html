@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>鉄道のご案内 - おしゃサーバー</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+  <div class="header-text">
+    <a href="../../"><h1>おしゃさーばー</h1></a>
+  </div>
+  <div class="nav">
+  <div id="nav-drawer">
+    <input id="nav-input" type="checkbox" class="nav-unshown">
+    <label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
+    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+    <div id="nav-content">
+      <div class="menu-title">
+        <h3>メニュー</h3>
+      </div>
+        <script src="/menu.js"></script>
+    </div>
+  </div>
+</div>
+  <div class="header-btn">
+    <a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED</a>
+  </div>
+</div>
+  <br>
+  <br>
+  <div class="title">
+  <a href="../../">HOME</a> > <a href="../">UserGuide</a> > 保護の方法
+  <br>
+  <br>
+  <h1>建築物・チェスト等の保護方法</h1>
+  <br>
+  <hr>
+  </div>
+  <div class="mainparent">
+  <div class="mainpageparent">
+  <div class="mainpage">
+    <br>
+    <br>
+  <div class="main">
+  <div class="main-title1">
+    <h2>チェスト・ドア等の保護</h2>
+  </div>
+  <br>
+  <div class="main-text">
+    ここではChestSafeプラグインを使用した保護について解説します。<br>
+    アイテム盗難などを防ぐため貴重品には必ずご使用ください。<br>
+    <br>
+    <h2>保護できるもの</h2><br>
+    <br>
+    <div class="picture">
+      <img src="protection-1.png"><br>
+    </div>
+    <br>
+    チェスト・シュルカーボックス・かまど・ドア・トラップドアなどゲーム内で機能を持ったあらゆるブロックに保護をかけることができます。<br>
+    すべてのオプションにおいて他人が破壊できなくなります。自分以外使用できない設定や、使用だけならだれでも可能な設定など柔軟な設定が可能です。<br>
+    <br>
+    <br>
+    <h2>保護コマンドの使用方法</h2><br>
+    <br>
+    ここでは、基礎的な保護/保護解除を画像付きで解説します。
+    <h3>保護コマンド</h3>
+    保護を行うには<br>
+    <strong>/chestsafe [private|public] [プレイヤー名]</strong><br>
+    を使用したあと、保護したいブロックを左クリックします。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-2.png"><br>
+    </div>
+    <br>
+    オプションは[private]と[Public]が選べます。<br>
+    <br>
+    [private]では他人による破壊・使用両方ともできなくなります。<br>
+    貴重品を保管するチェストなど、盗難防止用に使用すると良いでしょう。<br>
+    ドアに適用すると他人が一切立ち入れなくなります。<br>
+    <br>
+    [public]では他人による破壊ができなくなります。<br>
+    チェストの中身を出せてしまうので保護には向きません。<br>
+    一方で、ドアなどに適用すると誰でも使用は可能になるので公共施設などにおすすめです。<br>
+    <br>
+    複数人で建築物を作っている場合など自分以外のユーザーを許可したい場合はコマンドの最後に許可するユーザー名を記述します。<br>
+    <br>
+    例として、「破壊は禁止、誰でも使用可能、プレイヤー"example"さんも編集できる」の場合<br>
+    <strong>/chestsafe public example</strong><br>
+    となります。<br>
+    <br>
+    <h3>保護解除コマンド</h3>
+    保護を解除するには<br>
+    <strong>/chestsafe remove</strong><br>
+    を使用したあと、解除したいブロックを左クリックします。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-3.png"><br>
+    </div><br>
+    なお、保護中のブロックを自分で破壊した場合、自動的に解除されます。<br>
+    <br>
+    <h3>メンバーを追加/削除</h3>
+    保護コマンドで紹介した他ユーザーの追加ですが、後から追加/削除も可能です。<br>
+    追加するには <strong>/chestsafe member add [ユーザー名]</strong><br>
+    削除するには <strong>/chestsafe member remove [ユーザー名]</strong><br>
+    <br>
+    <h3>所有権の譲渡</h3>
+    保護したブロックを他のユーザーに譲渡するには<br>
+    <strong>/chestsafe transfer [新しいユーザー名]</strong>を使用します。<br>
+    一度所有権を移動すると元オーナー側では一切の操作ができなくなるので注意が必要です。<br>
+    <br>
+    <h2>プラグインの詳細</h2><br><br>
+    <a href="https://e-craft.io/bukkit/plugin/chestsafe/">詳しい情報はデベロッパーの公式ページをごらんください。</a>
+    <br>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <div class="main-title1">
+    <h2>[WorldGuard] 建築物の保護</h2>
+  </div>
+  <br>
+  <div class="main-text">
+    ここではChestSafeプラグインを使用した保護について解説します。<br>
+    アイテム盗難などを防ぐため貴重品には必ずご使用ください。<br>
+    <br>
+    <h2>保護できるもの</h2><br>
+    <br>
+    <div class="picture">
+      <img src="protection-4.png"><br>
+    </div>
+    <br>
+    ChestSafeでは機能を持ったブロック単体を保護しますが、家全体、敷地全体など大きな範囲を保護したい場合はこちらのWorldGuardをご利用ください。<br>
+    今回は、画像の家を保護していきます。<br>
+    <br>
+    <br>
+    <h2>保護コマンドの使用方法</h2><br>
+    <br>
+    ここでは、基礎的な保護/保護解除を画像付きで解説します。
+    <h3>保護コマンド</h3>
+    保護を行うには、まず木の斧を使って範囲選択をしていきます。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-5.png"><br>
+    </div>
+    <br>
+    木の斧を持って左クリックすると範囲選択の始点を指定できます。<br>
+    指定したい場所に立って <strong>//pos1</strong> コマンドでも同様に指定できます。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-6.png"><br>
+    </div><br>
+    木の斧を持って右クリックすると範囲選択の終点を指定できます。<br>
+    指定したい場所に立って <strong>//pos2</strong> コマンドでも同様に指定できます。<br>
+    <br>
+    この後、<strong>/rg claim [保護の名前]</strong> で保護は完了です。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-7.png"><br>
+    </div><br>
+    [保護の名前]は他と被らないわかりやすい名前をつけることをおすすめします。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-8.png"><br>
+    </div><br>
+    保護が成功するとこのようなメッセージが表示されます。お疲れ様でした。<br>
+    <br>
+    <h3>保護解除コマンド</h3>
+    保護を解除するには<strong> /rg remove [保護の名前] </strong>を使用します<br>
+    <br>
+    <div class="picture">
+      <img src="protection-9.png"><br>
+    </div>
+    <br>
+    <h3>保護の名前の確認</h3>
+    保護を解除したいけど名前を忘れてしまった！という場合は<br>
+    <strong>/rg list -p [自分のユーザー名]</strong>を使用します。<br>
+    <br>
+    <h3>メンバーを追加/削除</h3>
+    WorldGuardでも他のユーザを管理者に招待できます。<br>
+    追加するには <strong>/rg addmember [保護の名前] [追加したいユーザー名]</strong><br>
+    削除するには <strong>/rg removemember [保護の名前] [削除したいユーザー名]</strong><br>
+    <br>
+    <h2>プラグインの詳細</h2><br><br>
+    <a href="https://dev.bukkit.org/projects/worldguard">詳しい情報はデベロッパーの公式ページをごらんください。</a><br>
+    <br>
+    <strong>
+    自分の資産をしっかり守って、安全に楽しくMinecraftライフを送りましょう！<br>
+    保護していないブロック・アイテムが被害にあっても運営では救済することが出来ません。<br>
+    また、チェストからの盗難、ブロックの破壊はたとえ適切に保護が行われていなくてもBANなど処罰の対象となります。ルールと利用規約の確認をお願いします。</strong>
+    <br>
+  </div>
+</div>
+</div>
+</div>
+<div class="sidemenuparent">
+  <script src="/menu.js"></script>
+</div>
+</div>
+  <br>
+  <br>
+  <div class="footer">
+    <div class="footer-text">
+      <a href="../../"><h1>おしゃさーばー</h1><a>
+      <div class="footer-1">
+        <div class="footer-child"><p>©2016-2020 OsyaServer.</p></div>
+        <div class="footer-child"><a href="../../term">利用規約</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

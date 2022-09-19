@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<title>コマンド解説 - おしゃサーバー</title>
+
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="/src/index.css">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
+	<style type="text/css">
+		.title {
+			padding-top: 32px;
+		}
+		.title h1 {
+			padding: 16px 0px;
+		}
+		.main {
+			padding: 32px 0px;
+		}
+		.main-title1 h2 {
+			margin: 5px 0px 21px;
+		}
+		h2 {
+			margin: 21.6px 0px;
+		}
+		.important {
+			font-weight: bold;
+		}
+		.commands {
+			padding-top: 8px;
+			font-weight: bold;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="header">
+
+		<div class="header-text">
+	  		<a href="../../"><h1>おしゃサーバー</h1></a>
+		</div>
+
+		<div class="nav">
+			<div id="nav-drawer">
+				<input id="nav-input" type="checkbox" class="nav-unshown">
+				<label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
+				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<div id="nav-content">
+
+			    	<div class="menu-title">
+			      		<h3>メニュー</h3>
+			    	</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="header-btn">
+			<a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED</a>
+		</div>
+
+	</div>
+
+	<div class="title">
+		<a href="../../">HOME</a> &gt; <a href="../">UserGuide</a> &gt; コマンド解説
+		<h1>コマンド解説</h1>
+		<hr>
+	</div>
+
+	<div class="mainparent">
+
+		<div class="mainpageparent">
+			<div class="mainpage">
+				<div class="main">
+					<div class="main-title1">
+						<h2>使用可能なコマンドについて</h2>
+					</div>
+					<div class="main-text">
+					    <p>このサーバーで使用可能なコマンドについて解説します。</p>
+					    <p>使い方を覚えて快適なサーバー生活にしましょう。</p>
+					    <p>※一部コマンドはプレイ時間に応じて解禁されます。</p>
+
+						<hr />
+
+					  <h2>ホームポイント</h2>
+						<p>ホームポイントを設定することで、標準リスポーン地点の固定ができます。</p>
+						<p>ベッドやリスポーンアンカーが無くても拠点にリスポーン可能です。</p>
+						<p>また、ホームポイントにはどこからでもテレポート可能です。</p>
+						<h3>ホームポイント関連コマンド</h3>
+						<p class="commands">/sethome</p>
+						<p>ホームポイントを設定します。</p>
+						<p class="commands">/home</p>
+						<p>ホームポイントにテレポートします。</p>
+
+						<hr />
+
+					    <h2>椅子プラグイン</h2>
+						<p>このサーバーには椅子プラグインが導入されているため、階段ブロックやハーフブロックに右クリックで座ることができます。</p>
+						<p>また、コマンドを使用することでその他ブロックにも座ることができます。</p>
+						<p>全てスニーク(Shiftキー)することで解除できます。</p>
+						<h3>椅子プラグイン関連コマンド</h3>
+						<p class="commands">/sit</p>
+						<p>自分の真下にあるブロックに座ります。</p>
+						<p class="commands">/lay</p>
+						<p>自分の真下にあるブロックに寝ます。(夜をスキップすることはできません。)</p>
+						<p class="commands">/spin</p>
+						<p>その場でひたすら回転します。(激流エンチャントで移動するときのような見た目です。)</p>
+						<p class="commands">/crawl</p>
+						<p>エリトラで1ブロックの隙間に入った時のように移動できます。</p>
+
+						<hr />
+
+					    <h2>チェスト・ドアの保護</h2>
+						<p>このサーバーには保護プラグインの1つであるLWCが導入されています。</p>
+						<p class="important">(ChestSafeはバージョンアップに伴い使用できなくなりましたので、再設定が必要です。)</p>
+						<p>コマンドを使用することで、チェストやドアを個別に保護することができます。</p>
+						<p>ホッパーの接続可否やレッドストーン信号に反応するかなども細かく設定可能です。</p>
+						<p>コマンド入力後、設定したいブロックをクリック(左右どちらも可)することで設定できます。</p>
+						<p>設定可能なのは</p>
+						<p class="important">　◇チェスト・樽・シュルカーボックス・かまど系統・ドロッパー・ディスペンサー等アイテム保持可能なブロック</p>
+						<p>　　(ホッパーには設定できませんのでご注意ください。)</p>
+						<p class="important">　◇各種ドア・トラップドア・フェンスゲート・看板</p>
+						<p>　　(鉄ドアにも設定可、手で開閉できるようになります。看板に設定するとエレベーターの階層変更を制限できます。)</p>
+						<p>コマンド入力後、設定したいブロックをクリック(左右どちらも可)することで設定できます。</p>
+						<h3>チェスト・ドアの保護関連コマンド</h3>
+						<p class="commands">/cpublic</p>
+						<p>対象ブロックを破壊できないようにします。全体共有チェストに最適です。</p>
+						<p class="commands">/cprivate</p>
+						<p>対象ブロックを他人が操作できないようにします。個人アイテムに最適です。</p>
+						<p class="commands">/cunlock</p>
+						<p>対象ブロックの保護を解除します。</p>
+						<p class="commands">/cnolock</p>
+						<p>ブロック保護機能を一時的にオフにします。</p>
+						<p>再度/cnolockを実行するか、再ログインするまでLWC関連操作は出来ません。</p>
+						<p>大量にチェストを設置し、WorldGuardのフラグで保護する際に便利です。</p>
+						<p class="commands">/cpersist</p>
+						<p>以降実行するLWC関連コマンドが連続設定になります。もう1度/cpersistを実行すると単体設定に戻ります。</p>
+						<p>後述する/cdefaultと競合する場合があります。その場合は一旦/cdefault側を解除してください。</p>
+						<p class="commands">/cdefault [ユーザー名]</p>
+						<p>指定したユーザーを/cprivate設定時に自動的に保護メンバーに追加できます。</p>
+						<p>ユーザー名の前に-(ハイフン)を付けることで解除できます。</p>
+						<p class="commands">/cinfo</p>
+						<p>対象ブロックの保護の詳細を表示します。</p>
+						<p class="commands">/lwc flag [フラグ名] [on|off]</p>
+						<p>対象ブロックの保護フラグを変更します。フラグについては後述します。</p>
+
+						<h3 id="lwcflag">使用可能なLWCフラグ</h3>
+						<p class="commands">hopper</p>
+						<p>ホッパーでの入出力を制御します。onにするとアイテムが移動します。デフォルトはoffです。</p>
+						<p class="commands">hopperin</p>
+						<p>ホッパーでの入力を制御します。onにするとアイテムが入ってきます。デフォルトはoffです。</p>
+						<p class="commands">hopperout</p>
+						<p>ホッパーでの出力を制御します。onにするとアイテムが出ていきます。デフォルトはoffです。</p>
+						<p class="commands">redstone</p>
+						<p>レッドストーン信号に反応するかを制御します。onにすると反応しなくなります。デフォルトはoffです。</p>
+						<p class="commands">autoclose</p>
+						<p>自動的にドアなどが閉まるかを制御します。onにすると3秒で自動的に閉まります。デフォルトはoffです。</p>
+
+						<hr />
+
+					  <h2 id="wg">エリアの保護</h2>
+						<p>このサーバーにはWorldGuardが導入されており、Region機能でエリアの保護が可能です。</p>
+						<p class="important">1度に保護可能な範囲は100,000ブロック、1プレイヤーの最大保護数は100となっています。(2022/09/19現在)</p>
+						<p>基本的な使用方法については「建築物・チェスト等の保護方法」もご覧ください。</p>
+						<h3>エリアの保護関連コマンド</h3>
+						<p class="commands">//pos1</p>
+						<p>選択範囲の地点1を設定します。(木の斧左クリック同様です。)</p>
+						<p class="commands">//pos2</p>
+						<p>選択範囲の地点2を設定します。(木の斧右クリック同様です。)</p>
+						<p class="commands">/rg claim [保護名]</p>
+						<p>選択した範囲を新規に保護します。</p>
+						<p class="commands">/rg list (ページ番号)</p>
+						<p>現在のワールドの自分の保護一覧を表示します。9件目以降を確認する場合はページを数字で指定します。</p>
+						<p class="commands">/rg list -w [ワールド名] (ページ番号)</p>
+						<p>指定ワールドの自分の保護一覧を表示します。ワールド名はdynmapに表示されているものです。</p>
+						<p class="commands">/rg addmember [保護名] [プレイヤー名]</p>
+						<p>指定したユーザーを指定した保護のメンバーに追加します。</p>
+						<p class="commands">/rg removemember [保護名] [プレイヤー名]</p>
+						<p>指定したユーザーを指定した保護のメンバーから削除します。</p>
+						<p class="commands">/rg flag [保護名] [フラグ名] (-g [グループ名]) [値]</p>
+						<p>指定した保護のフラグを変更します。フラグについては後述します。</p>
+						<p>グループ名を指定するとそのグループに向けて設定可能です。グループについては後述します。</p>
+						<p>グループ指定なしの場合は自分を含めた全プレイヤーに対しての設定となります。</p>
+
+						<h3>使用可能なRegionフラグ</h3>
+						<p>記載しているデフォルト値はメンバー以外(nonmember)に対しての値です。(allow: 許可、deny: 拒否)</p>
+						<p class="commands">interact (値: allow, deny)</p>
+						<p>ドアやレバー、乗り物等の使用可否を制御します。デフォルトはallowです。</p>
+						<p class="commands">block-break (値: allow, deny)</p>
+						<p>ブロックの破壊可否を制御します。デフォルトはdenyです。</p>
+						<p class="commands">block-place (値: allow, deny)</p>
+						<p>ブロックの設置可否を制御します。デフォルトはdenyです。</p>
+						<p class="commands">use (値: allow, deny)</p>
+						<p>ドアやレバー等の使用可否を制御します。デフォルトはallowです。</p>
+						<p>LWCと両方設定している場合、どちらも許可しているプレイヤーのみがドア等にアクセスできます。</p>
+						<p class="commands">ride (値: allow, deny)</p>
+						<p>乗り物の使用可否を制御します。デフォルトはallowです。</p>
+						<p class="commands">pvp (値: allow, deny)</p>
+						<p>プレイヤーの攻撃可否を制御します。デフォルトはallowです。</p>
+						<p class="commands">damage-animals (値: allow, deny)</p>
+						<p>動物を攻撃出来るかを制御します。デフォルトはdenyです。</p>
+						<p>共同農場などでallowが活用できると思います。</p>
+						<p class="commands">chest-access (値: allow, deny)</p>
+						<p>チェスト等のGUIを開けるかを制御します。デフォルトはallowです。</p>
+						<p>LWCと両方設定している場合、どちらも許可しているプレイヤーのみがアクセスできます。</p>
+						<p class="commands">vehicle-place (値: allow, deny)</p>
+						<p>乗り物の設置可否を制御します。デフォルトはallowです。</p>
+						<p class="commands">vehicle-destroy (値: allow, deny)</p>
+						<p>乗り物の設置可否を制御します。デフォルトはallowです。</p>
+						<p class="commands">item-frame-rotation (値: allow, deny)</p>
+						<p>額縁を回転出来るかを制御します。デフォルトはdenyです。</p>
+						<p>パスワードドアギミックなどでallowが活用できると思います。</p>
+						<p class="commands">use-anvil (値: allow, deny)</p>
+						<p>金床の使用可否を制御します。デフォルトはallowです。</p>
+						<p class="commands">entry (値: allow, deny)</p>
+						<p>エリアへの立ち入り可否を制御します。デフォルトはallowです。</p>
+						<p class="commands">greeting (値: テキスト)</p>
+						<p>エリアに立ち入った時に表示されるメッセージを設定できます。</p>
+						<p class="commands">farewell (値: テキスト)</p>
+						<p>エリアから出た時に表示されるメッセージを設定できます。</p>
+						<p class="commands">enderpearl (値: allow, deny)</p>
+						<p>エンダーパールの使用可否を制御します。デフォルトはallowです。</p>
+						<p class="commands">chorus-fruit-teleport (値: allow, deny)</p>
+						<p>コーラスフルーツでのテレポート可否を制御します。デフォルトはallowです。</p>
+
+						<h3>使用可能なRegionグループ</h3>
+						<p class="commands">members</p>
+						<p>保護のメンバーへ追加したプレイヤー</p>
+						<p class="commands">nonmembers</p>
+						<p>保護のメンバーへ追加していないプレイヤー</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sidemenuparent">
+
+			<script src="/menu.js"></script>
+
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="footer-text">
+			<a href="../../"><h1>おしゃサーバー</h1></a>
+			<div class="footer-1">
+
+				<div class="footer-child">
+					<p>&copy;2022 おしゃサーバー</p>
+				</div>
+
+				<div class="footer-child">
+					<a href="../../term">利用規約</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

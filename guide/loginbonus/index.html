@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>建築物・チェスト等の保護方法 - おしゃサーバー</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
+  <style type="text/css">
+  /* 003 */
+.button003 a {
+  background: #eee;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 260px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+.button003 a:hover {
+  background: #313131;
+  color: #FFF;
+}
+.button003 a:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #313131;
+  border-right: 3px solid #313131;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+.button003 a:hover:after {
+  border-color: #FFF;
+}
+  </style>
+</head>
+<body>
+  <div class="header">
+  <div class="header-text">
+    <a href="../../"><h1>おしゃサーバー</h1></a>
+  </div>
+  <div class="nav">
+  <div id="nav-drawer">
+    <input id="nav-input" type="checkbox" class="nav-unshown">
+    <label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
+    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+    <div id="nav-content">
+      <div class="menu-title">
+        <h3>メニュー</h3>
+      </div>
+        <script src="/menu.js"></script>
+    </div>
+  </div>
+</div>
+  <div class="header-btn">
+    <a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED</a>
+  </div>
+</div>
+  <br>
+  <br>
+  <div class="title">
+  <a href="../../">HOME</a> > <a href="../">UserGuide</a> > 保護の方法
+  <br>
+  <br>
+  <h1>建築物・チェスト等の保護方法</h1>
+  <br>
+  <hr>
+  </div>
+  <div class="mainparent">
+  <div class="mainpageparent">
+  <div class="mainpage">
+    <br>
+    <br>
+  <div class="main">
+  <div class="main-title1">
+    <h2>[LWC] チェスト・ドア等の保護</h2>
+  </div>
+  <br>
+  <div class="main-text">
+    ここではLWCプラグインを使用した保護について解説します。<br>
+    アイテム盗難などを防ぐため貴重品には必ずご使用ください。<br>
+    <br>
+    <strong>この機能はBeginnerランク(プレイ時間30分～)から使えるようになります。</strong><br>
+    <br>
+    <h2>保護できるもの</h2><br>
+    <br>
+    <div class="picture">
+      <img src="protection-1.png"><br>
+    </div>
+    <br>
+    チェスト・シュルカーボックス・かまど・ドア・トラップドアなどゲーム内で機能を持ったあらゆるブロックに保護をかけることができます。<br>
+    すべてのオプションにおいて他人が破壊できなくなります。自分以外使用できない設定や、使用だけならだれでも可能な設定など柔軟な設定が可能です。<br>
+    <br>
+    <br>
+    <h2>保護コマンドの使用方法</h2><br>
+    <br>
+    ここでは、基礎的な保護/保護解除を画像付きで解説します。
+    <h3>保護コマンド</h3>
+    保護を行うには<br>
+    <strong>/cprivate</strong><br>
+    または<br>
+    <strong>/cpublic</strong><br>
+    を使用したあと、保護したいブロックを左クリックします。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-2.png"><br>
+    </div>
+    <br>
+    保護の方法はは<strong>[private]</strong>と<strong>[public]</strong>が選べます。<br>
+    <br>
+    <strong>[private]</strong>では他人による破壊・使用両方ともできなくなります。<br>
+    貴重品を保管するチェストなど、盗難防止用に使用すると良いでしょう。<br>
+    ドアに適用すると他人が一切立ち入れなくなります。<br>
+    <br>
+    <strong>[public]</strong>では他人による破壊ができなくなります。<br>
+    チェストの中身を出せてしまうので保護には向きません。<br>
+    一方で、ドアなどに適用すると誰でも使用は可能になるので公共施設などにおすすめです。<br>
+    <br>
+    複数人で建築物を作っている場合など自分以外のユーザーを許可したい場合はコマンドの最後に許可するユーザー名を記述します。<br>
+    <br>
+    <strong>/cprivate [自分のユーザ名] [許可するユーザ名]</strong><br>
+    <br>
+    <strong>(自分用に保護するときは名前を入れる必要はありません)</strong><br>
+    <br>
+    例として、「破壊は禁止、誰でも使用可能、プレイヤー"example"さんも編集できる」の場合<br>
+    <strong>/cpublic [自分の名前] example</strong><br>
+    となります。<br>
+    <br>
+    <h3>保護解除コマンド</h3>
+    保護を解除するには<br>
+    <strong>/cremove</strong><br>
+    を使用したあと、解除したいブロックを左クリックします。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-3.png"><br>
+    </div><br>
+    なお、保護中のブロックを自分で破壊した場合、自動的に解除されます。<br>
+    <br>
+    <h3>メンバーを追加/削除</h3>
+    保護コマンドで紹介した他ユーザーの追加ですが、後から追加/削除も可能です。<br>
+    追加するには <strong>/cmodify [自分のユーザ名] [追加するユーザ名]</strong><br>
+    削除するには <strong>/cmodify -[削除するユーザ名]</strong><br>
+    <br>
+    <h3>注意事項</h3>
+    LWCで保護したブロックは基本的にホッパーやレッドストーンが機能しなくなります。<br>
+    保護したチェストへホッパーでアイテムの搬入などを行うときは"flag"設定をします。<br>
+    コマンド解説のページで使えるflagを紹介しています。<br>
+    <br>
+    <div class="button003">
+	     <a href="../commands/index.html#lwcflag">"flag" 設定について詳しく見る</a>
+    </div>
+    <br>
+    <h2>プラグインの詳細</h2><br><br>
+    <a href="https://www.spigotmc.org/resources/lwc-extended.69551/">デベロッパーの公式ページ</a>
+    <br>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <div class="main-title1">
+    <h2>[WorldGuard] 建築物の保護</h2>
+  </div>
+  <br>
+  <div class="main-text">
+    ここではWorldGuardプラグインを使用した保護について解説します。<br>
+    建築物の破壊行為などの荒らしを防ぐためにご使用ください。<br>
+    <br>
+    <strong>この機能はResidentランク(プレイ時間3時間～)から使えるようになります。</strong><br>
+    <br>
+    <br>
+    <h2>保護できるもの</h2><br>
+    <br>
+    <div class="picture">
+      <img src="protection-4.png"><br>
+    </div>
+    <br>
+    ChestSafeでは機能を持ったブロック単体を保護しますが、家全体、敷地全体など大きな範囲を保護したい場合はこちらのWorldGuardをご利用ください。<br>
+    今回は、画像の家を保護していきます。<br>
+    <br>
+    <br>
+    <h2>保護コマンドの使用方法</h2><br>
+    <br>
+    ここでは、基礎的な保護/保護解除を画像付きで解説します。
+    <h3>保護コマンド</h3>
+    保護を行うには、まず木の斧を使って範囲選択をしていきます。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-5.png"><br>
+    </div>
+    <br>
+    木の斧を持って左クリックすると範囲選択の始点を指定できます。<br>
+    指定したい場所に立って <strong>//pos1</strong> コマンドでも同様に指定できます。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-6.png"><br>
+    </div><br>
+    木の斧を持って右クリックすると範囲選択の終点を指定できます。<br>
+    指定したい場所に立って <strong>//pos2</strong> コマンドでも同様に指定できます。<br>
+    <br>
+    この後、<strong>/rg claim [保護の名前]</strong> で保護は完了です。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-7.png"><br>
+    </div><br>
+    [保護の名前]は他と被らないわかりやすい名前をつけることをおすすめします。<br>
+    <br>
+    <div class="picture">
+      <img src="protection-8.png"><br>
+    </div><br>
+    保護が成功するとこのようなメッセージが表示されます。お疲れ様でした。<br>
+    <br>
+    <h3>保護解除コマンド</h3>
+    保護を解除するには<strong> /rg remove [保護の名前] </strong>を使用します<br>
+    <br>
+    <div class="picture">
+      <img src="protection-9.png"><br>
+    </div>
+    <br>
+    <h3>保護の名前の確認</h3>
+    保護を解除したいけど名前を忘れてしまった！という場合は<br>
+    <strong>/rg list</strong>を使用します。<br>
+    <br>
+    <h3>メンバーを追加/削除</h3>
+    WorldGuardでも他のユーザを管理者に招待できます。<br>
+    追加するには <strong>/rg addmember [保護の名前] [追加したいユーザー名]</strong><br>
+    削除するには <strong>/rg removemember [保護の名前] [削除したいユーザー名]</strong><br>
+    <br>
+    <h3>他のオプション</h3>
+    ここで紹介したものは初心者の方向けの簡単な解説です。<br>
+    WorldGuardには様々な機能があり、使いこなせばもっと便利に利用できます。<br>
+    コマンド解説のページでは更に詳しい解説を載せていますのでぜひごらんください。<br>
+    <br>
+    <div class="button003">
+       <a href="../commands/index.html#wg">WorldGuard設定を更に詳しく</a>
+    </div>
+    <br>
+    <h2>プラグインの詳細</h2><br><br>
+    <a href="https://dev.bukkit.org/projects/worldguard">詳しい情報はデベロッパーの公式ページをごらんください。</a><br>
+    <br>
+    <strong>
+    自分の資産をしっかり守って、安全に楽しくMinecraftライフを送りましょう！<br>
+    保護していないブロック・アイテムが被害にあっても運営では救済することが出来ません。<br>
+    また、チェストからの盗難、ブロックの破壊はたとえ適切に保護が行われていなくてもBANなど処罰の対象となります。ルールと利用規約の確認をお願いします。</strong>
+    <br>
+    <br>
+    <h2>更に細かい設定</h2><br><br>
+    このページで紹介しきれていない上級者向け保護設定についてはコマンド解説ページをごらんください。
+    <br>
+    <br>
+    <div class="button003">
+       <a href="../commands/index.html">コマンド解説</a>
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
+</div>
+</div>
+<div class="sidemenuparent">
+  <script src="/menu.js"></script>
+</div>
+</div>
+  <br>
+  <br>
+  <div class="footer">
+    <div class="footer-text">
+      <a href="../../"><h1>おしゃサーバー</h1><a>
+      <div class="footer-1">
+        <div class="footer-child"><p>©2022おしゃサーバー</p></div>
+        <div class="footer-child"><a href="../../term">利用規約</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

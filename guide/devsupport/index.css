@@ -1,0 +1,397 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body hr {
+  margin: 15px 30px;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 769px){
+.header {
+  background-color: #2C2F33;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-text h1 {
+  font-size: 45px;
+  color: #ffffff;
+  padding: 15px 0px 15px 15px;
+}
+}
+
+@media screen and (max-width: 768px){
+.header {
+  background-color: #2C2F33;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-text h1 {
+  font-size: 34px;
+  color: #ffffff;
+  padding: 13px 0px 13px 10px;
+}
+}
+
+.header-btn {
+  margin-right: 15px;
+}
+
+#nav-drawer {
+  position: relative;
+}
+
+.nav-unshown {
+  display:none;
+}
+
+@media screen and (max-width: 768px){
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
+  margin: 0px 10px 0px 0px;
+}
+}
+
+@media screen and (min-width: 769px){
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+  margin: 0px 24px 15px 0px;
+}
+}
+
+@media screen and (max-width: 768px){
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+}
+
+.nav i {
+  font-size: 32px;
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+}
+}
+
+@media screen and (min-width: 769px){
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+}
+
+.nav i {
+  font-size: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+}
+}
+
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+
+#nav-close {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 90%;
+  max-width: 330px;
+  height: 100%;
+  background: #fff;
+  transition: .3s ease-in-out;
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+}
+
+#nav-input:checked ~ #nav-close {
+  display: block;
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+
+@media screen and (max-width: 1549px){
+  .header-btn {
+    display:none;
+  }
+
+  .sidemenuparent {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 1550px){
+  #nav-open {
+    display:none;
+  }
+
+  .mainparent{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+  }
+
+  .mainpageparent{
+    border:solid 6px #fafafa;
+    width: 77%;
+    float: left;
+    margin: 30px 20px;
+  }
+
+  .mainpage {
+    border:solid 2px #ededed;
+  }
+
+  .sidemenuparent{
+    border:solid 6px #fafafa;
+    width: 20%;
+    height: 992px;
+    float: right;
+    margin: 30px 20px;
+  }
+
+}
+
+.sidemenu{
+  border:solid 2px #ededed;
+}
+
+.menu-title {
+  font-size: 24px;
+  color: #333;
+background: #eaf3ff;
+border-bottom: solid 3px #516ab6;
+}
+
+.menu-title h3{
+  padding: 14px;
+}
+
+.sidemenu {
+  color: #595959;
+}
+
+.UserGuidecont hr{
+  border:solid 0.5px #a1a1a1;
+}
+
+.UserGuidecont a{
+  text-decoration: none;
+  color: #595959;
+}
+
+.UserGuide p{
+  margin: 12px 16px;
+  font-size: 21px;
+}
+
+.sidemenu hr{
+  margin: 5px 8px;
+}
+
+.UserGuidecont p{
+  margin: 10px 22px;
+  font-size: 19px;
+}
+
+.btn {
+  text-align: center;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.title {
+  text-align: center;
+  color: #333333;
+  width: 90%;
+  margin: auto;
+}
+
+.title h1 {
+  font-size: 33px;
+}
+
+.title a {
+  color: #333333;
+}
+
+.main {
+  margin: 0px 15px;
+}
+
+.main-title1 {
+  text-align: center;
+  font-size: 35px;
+  margin: 5px;
+  color: #333333;
+}
+
+.main-title2 {
+  text-align: center;
+  font-size: 20px;
+  margin:10px;
+  color: #333333;
+  line-height: 1.5em
+}
+
+.main-text {
+  font-size: 18px;
+  margin: 0px 15px;
+  line-height: 1.2em;
+}
+
+.main-text h3 {
+  color: #505050;/*文字色*/
+  padding: 0.5em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 1.3;/*行高*/
+  background: #dbebf8;/*背景色*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+  margin: 16px 0px;
+}
+
+.main-text h3:before {
+  content: '●';
+  color: white;
+  margin-right: 8px;
+}
+
+.main-text h2 {
+  font-size: 28px;
+  line-height: 1.5em;
+  color: #6594e0;/*文字色*/
+  /*線の種類（点線）2px 線色*/
+  border-bottom: dashed 2px #6594e0;
+  margin: 10px 8px;
+}
+
+.main-text h4 {
+  font-size: 19px;
+  margin: 5px 2px;
+}
+
+.data {
+  margin: 0px 10px;
+}
+
+.btn {
+  text-align: center;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #424242;
+  height: 140px;
+  display: inline-block;
+  width: 100%;
+}
+
+.footer h1 {
+  font-size: 30px;
+  padding: 30px 10px 30px 30px;
+  color: #ffffff;
+  width: 250px;
+}
+
+.footer-1 {
+  display: flex;
+  justify-content:center;
+}
+
+.footer-child p {
+  color: #fff;
+  font-size: 20px;
+  margin: 0px 20px;
+  width: 250px;
+}
+
+.footer-child a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 20px;
+  width: 70px;
+}
+
+.picture img {
+  width: 100%;
+  max-width: 700px;
+}

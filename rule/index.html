@@ -4,139 +4,161 @@
   <meta charset="utf-8">
   <title>おしゃサーバー</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../src/reset.css">
+  <link rel="stylesheet" type="text/css" href="../src/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese">
   <link rel="stylesheet" href="slider.css">
 </head>
+
 <body>
-  <div class="header">
-    <div class="header-text">
-      <a href="../"><h1>おしゃさーばー</h1></a>
-    </div>
-    <div class="nav">
-    <div id="nav-drawer">
-      <input id="nav-input" type="checkbox" class="nav-unshown">
-      <label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
-      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-      <div id="nav-content">
-        <div class="menu-title">
-          <h3>メニュー</h3>
+
+	<div class="header">
+
+		<div class="header-text">
+	  		<a href="../"><h1>おしゃサーバー</h1></a>
+		</div>
+
+		<div class="nav">
+			<div id="nav-drawer">
+				<input id="nav-input" type="checkbox" class="nav-unshown">
+				<label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
+				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<div id="nav-content">
+
+			    	<div class="menu-title">
+			      		<h3>メニュー</h3>
+			    	</div>
+			    	<script src="../menu.js"></script>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-btn">
+			<a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED!</a>
+		</div>
+
+	</div>
+
+  <div class="mainparent">
+    <div class="mainpageparent">
+      <div class="mainpage">
+
+        <br />
+        <br />
+
+        <div class="main-title1">
+          <h2>ルール</h2>
+          <p>このページの最下部でチュートリアルパスワードを確認できます。</p>
+          <p>ルールは最後まで飛ばさずにお読みください。</p>
         </div>
-          <script src="/menu.js"></script>
+
+        <div class="rule">
+          <div class="rule-text">
+            <p>このページでは、おしゃサーバーにおけるルールに関して記載しています。自由度の高いサーバーを目指しているため制限は最小限にとどめておりますが、すべての方が安心して利用できるように皆様のご協力をよろしくお願いします。</p>
+            <p>また故意でなく建造物を破壊してしまった場合は速やかに運営まで連絡をお願いします。</p>
+            <p>なお、建築物や土地の定義に関しては<a href="../term">利用規約</a>に記載しております。あわせてご確認ください。</p>
+
+            <h2>禁止行為について</h2>
+            <p>以下の行為をサーバー内で行うことを禁止します。</p>
+            <p>1, 他人への同意ない攻撃(PVP行為)</p>
+            <p>2, 窃盗(チェストの保護の有無に関わらず) </p>
+            <p>3, 他人の建築物への無断破壊、改変行為 </p>
+            <p>4, 他人の土地での無断建築、採掘行為（地下の利用は十分注意してください。） </p>
+            <p>5, 他人の土地の占拠 </p>
+            <p>6, 建築ワールドでのブランチマイニング等採掘行為（資源ワールドを用意しております。また建築目的の掘削,整地は構いません。） </p>
+            <p>7, 停止できないクロック回路の作成及び作動中のログアウト </p>
+            <p>8, 誹謗中傷を目的とするもの及び公序良俗に反する建築物の作成 </p>
+            <p>9, 建築目的でない広範囲の土地占領（建築の周辺景観の保護のためであれば認められる場合もあります。） </p>
+            <p>10, バグの意図的な利用（無限増殖バグ等はゲームバランスが崩れるためご遠慮ください。） </p>
+            <p>11, 他人を不快にさせる言動 </p>
+            <p>12, スパム行為 </p>
+            <p>13, なりすまし行為 </p>
+            <p>14, 他のサーバーの宣伝や勧誘行為 </p>
+            <p>15, 他人の個人情報の暴露（サーバー内に限りません。当サーバーユーザの情報を外部SNS等で流出させる行為も禁止します。） </p>
+            <p>16, 他人に迷惑をかける、危害を加える行為 </p>
+            <p>17, その他、運営が不適切と判断する行為 </p>
+            
+            <h2>厳守すべきこと</h2>
+            <p>1,上記禁止行為を行わないこと </p>
+            <p>2,切った木を植え直す等、他ユーザーへの配慮 </p>
+            <p>3,ラグ対策のため、エンティティの数は1チャンクあたり30個程度に留めること </p>
+            <p>4,他ユーザーの土地,建築物から3ブロック程離して建築すること（相手に同意を得ればこの限りではありません。） </p>
+            <p>5,スタッフの指示 </p>
+            <p>6,当サーバーの<a href="../term">利用規約</a> </p>
+            
+            <h2>許可Mod等</h2>
+            <p>こちらで許可されているMod、ツール以外は使用できません。 </p>
+            <p>1,軽量化Mod,描画改善ツール等（Optifine,BetterFPSなど） </p>
+            <p>2,各種シェーダー </p>
+            <p>3,入力支援Mod （InteliInputなど） </p>
+            <p>4,スポーンチェッカー </p>
+            <p>5,ミニマップMod（ウェイポイントは使用できません） </p>
+            <p>6,インベントリ整理,レシピ表示（他の機能がついているものは使用できません。） </p>
+            <p>7,前提Mod （Forge,LiteLoaderなど） </p>
+            <br />
+            <p>使用していいかわからないもの、追加してほしいものがあればDiscordの「要望・提案」からお問い合わせください。 </p>
+            
+            <h2>運営で対応できないこと</h2>
+            <p>資源ワールドのリセットに伴うアイテム紛失 </p>
+            <p>ユーザーの過失によるアイテムロスト </p>
+            <p>保護をしていない物の損壊、窃盗に対する補償 </p>
+            <p>当ルール及び利用規約を守らなかった場合の損害への補償 </p>
+            
+            <h2>その他</h2>
+            <p>ルールに反する建築物などは運営がユーザーへの通知なく撤去,移動を行う場合があります。 </p>
+            <p>中央市街付近は区画整理により長期間ログインしていないユーザーの建築物を撤去,移動を行う場合があります。 </p>
+            
+            <br />
+            <br />
+
+            <p><strong>ルールは以上となります。ルールを守って楽しいMinecraftライフを！ </strong></p>
+            <p>2020/04/27 制定　　<a href="../term">利用規約</a></p>
+          </div>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="gen">
+          <p>チュートリアルパスワード 確認</p>
+        </div>
+        <div class="applywaku">
+          <div class="apply">
+            <input type="checkbox" class="toggle-rule"/>
+            <div class="toggle-term">
+              <input type="checkbox" class="toggle-term2"/>
+              <div class="password">
+                <p>こちらがチュートリアルパスワードです→[/28eydhfuj32e12]</p>
+                <p>チャット欄に入力するとチュートリアルクリアです。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="sidemenuparent">
+      <script src="../menu.js"></script>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-text">
+      <a href="../"><h1>おしゃサーバー</h1></a>
+      <div class="footer-1">
+
+        <div class="footer-child">
+          <p>&copy; 2024 おしゃサーバー</p>
+        </div>
+
+        <div class="footer-child">
+          <a href="../term">利用規約</a>
+        </div>
+
       </div>
     </div>
   </div>
-    <div class="header-btn">
-      <a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED</a>
-    </div>
-  </div>
-  <div class="mainparent">
-  <div class="mainpageparent">
-  <div class="mainpage">
-    <br>
-    <br>
-    <div class="title"><h1>ルール</h1></div>
-    <div class="sub-title">
-      このページの最下部でチュートリアルパスワードを確認できます。
-      ルールは最後まで飛ばさずにお読みください。
-    </div>
-  <div class="rule">
-    <div class="rule-text">
-    このページでは、おしゃサーバーにおけるルールに関して記載しています。自由度の高いサーバーを目指しているため制限は最小限にとどめておりますが、すべての方が安心して利用できるように皆様のご協力をよろしくお願いします。<br>
-    また故意でなく建造物を破壊してしまった場合は速やかに運営まで連絡をお願いします。<br>
-    なお、建築物や土地の定義に関しては<a href="../term">利用規約</a>に記載しております。あわせてご確認ください。<br>
-    <br>
-    <h2>禁止行為について</h2>
-    以下の行為をサーバー内で行うことを禁止します。<br>
-    1, 他人への同意ない攻撃(PVP行為)<br>
-    2, 窃盗(チェストの保護の有無に関わらず) <br>
-    3, 他人の建築物への無断破壊、改変行為 <br>
-    4, 他人の土地での無断建築、採掘行為（地下の利用は十分注意してください。） <br>
-    5, 他人の土地の占拠 <br>
-    6, 建築ワールドでのブランチマイニング等採掘行為（資源ワールドを用意しております。また建築目的の掘削,整地は構いません。） <br>
-    7, 停止できないクロック回路の作成及び作動中のログアウト <br>
-    8, 誹謗中傷を目的とするもの及び公序良俗に反する建築物の作成 <br>
-    9, 建築目的でない広範囲の土地占領（建築の周辺景観の保護のためであれば認められる場合もあります。） <br>
-    10, バグの意図的な利用（無限増殖バグ等はゲームバランスが崩れるためご遠慮ください。） <br>
-    11, 他人を不快にさせる言動 <br>
-    12, スパム行為 <br>
-    13, なりすまし行為 <br>
-    14, 他のサーバーの宣伝や勧誘行為 <br>
-    15, 他人の個人情報の暴露（サーバー内に限りません。当サーバーユーザの情報を外部SNS等で流出させる行為も禁止します。） <br>
-    16, 他人に迷惑をかける、危害を加える行為 <br>
-    17, その他、運営が不適切と判断する行為 <br>
-    <br>
-    <h2>厳守すべきこと</h2>
-    1,上記禁止行為を行わないこと <br>
-    2,切った木を植え直す等、他ユーザーへの配慮 <br>
-    3,ラグ対策のため、エンティティの数は1チャンクあたり30個程度に留めること <br>
-    4,他ユーザーの土地,建築物から3ブロック程離して建築すること（相手に同意を得ればこの限りではありません。） <br>
-    5,スタッフの指示 <br>
-    6,当サーバーの<a href="../term">利用規約</a> <br>
-    <br>
-    <h2>許可Mod等</h2>
-    こちらで許可されているMod、ツール以外は使用できません。 <br>
-    1,軽量化Mod,描画改善ツール等（Optifine,BetterFPSなど） <br>
-    2,各種シェーダー <br>
-    3,入力支援Mod （InteliInputなど） <br>
-    4,スポーンチェッカー <br>
-    5,ミニマップMod（ウェイポイントは使用できません） <br>
-    6,インベントリ整理,レシピ表示（他の機能がついているものは使用できません。） <br>
-    7,前提Mod （Forge,LiteLoaderなど） <br>
-    <br>
-    使用していいかわからないもの、追加してほしいものがあればDiscordでAdminまでお問い合わせください。 <br>
-    <br>
-    <h2>運営で対応できないこと</h2>
-    資源ワールドのリセットに伴うアイテム紛失 <br>
-    ユーザーの過失によるアイテムロスト <br>
-    保護をしていない物の損壊、窃盗に対する補償 <br>
-    当ルール及び利用規約を守らなかった場合の損害への補償 <br>
-    <br>
-    <h2>その他</h2>
-    ルールに反する建築物などは運営がユーザーへの通知なく撤去,移動を行う場合があります。 <br>
-    中央市街付近は区画整理により長期間ログインしていないユーザーの建築物を撤去,移動を行う場合があります。 <br>
-    <br>
-    <br>
-    ルールは以上となります。ルールを守って楽しいMinecraftライフを！ <br>
-    2020/04/27 制定　　<a href="../term">利用規約</a>
-    </div>
-</div>
-  <br>
-  <hr>
-  <div class="gen">
-    チュートリアルパスワード 確認
-  </div>
-  <div class="applywaku">
-  <div class="apply">
-    <input type="checkbox" class="toggle-rule"/>
-    <div class="toggle-term">
 
-    <input type="checkbox" class="toggle-term2"/>
-    <div class="password">
-      <p>こちらがチュートリアルパスワードです→[/28eydhfuj32e12]</p>
-      <p>チャット欄に入力するとチュートリアルクリアです。</p>
-    </div>
-  </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="sidemenuparent">
-  <script src="/menu.js"></script>
-</div>
-</div>
-  <br>
-  <br>
-<div class="footer">
-  <div class="footer-text">
-    <a href="../"><h1>おしゃさーばー</h1><a>
-    <div class="footer-1">
-      <div class="footer-child"><p>©2016-2020 OsyaServer.</p></div>
-      <div class="footer-child"><a href="../term">利用規約</a></div>
-    </div>
-  </div>
-</div>
 </body>
 </html>

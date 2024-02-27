@@ -131,16 +131,16 @@ body hr {
 }
 
 .footer-child p {
-  color: #fff;
-  font-size: 20px;
+  color: #aaa;
+  font-size: 16px;
   margin: 0px 20px;
   width: 250px;
 }
 
 .footer-child a {
-  color: #fff;
+  color: #aaa;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0px 20px;
   width: 70px;
 }

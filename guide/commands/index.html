@@ -8,34 +8,10 @@
 
 	<title>コマンド解説 - おしゃサーバー</title>
 
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="/src/index.css">
-	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
-	<style type="text/css">
-		.title {
-			padding-top: 32px;
-		}
-		.title h1 {
-			padding: 16px 0px;
-		}
-		.main {
-			padding: 32px 0px;
-		}
-		.main-title1 h2 {
-			margin: 5px 0px 21px;
-		}
-		h2 {
-			margin: 21.6px 0px;
-		}
-		.important {
-			font-weight: bold;
-		}
-		.commands {
-			padding-top: 8px;
-			font-weight: bold;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="../../src/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../src/index.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese">
 
 </head>
 
@@ -44,7 +20,7 @@
 	<div class="header">
 
 		<div class="header-text">
-	  		<a href="../../"><h1>おしゃサーバー</h1></a>
+	  		<a href="../../" title="トップページに戻る"><h1>おしゃサーバー</h1></a>
 		</div>
 
 		<div class="nav">
@@ -57,13 +33,13 @@
 			    	<div class="menu-title">
 			      		<h3>メニュー</h3>
 			    	</div>
-			    	<script src="/menu.js"></script>
+			    	<script src="../../menu.js"></script>
 				</div>
 			</div>
 		</div>
 
 		<div class="header-btn">
-			<a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED</a>
+			<a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED!</a>
 		</div>
 
 	</div>
@@ -75,25 +51,27 @@
 	</div>
 
 	<div class="mainparent">
-
 		<div class="mainpageparent">
 			<div class="mainpage">
 				<div class="main">
+
 					<div class="main-title1">
 						<h2>使用可能なコマンドについて</h2>
-					</div>
-					<div class="main-text">
-
 					    <p>このサーバーで使用可能なコマンドについて解説します。</p>
+					    <p>コマンドは / (スラッシュ)から入力します。</p>
 					    <p>使い方を覚えて快適なサーバー生活にしましょう。</p>
 					    <p>※一部コマンドはプレイ時間に応じて解禁されます。</p>
+					</div>
 
-						<hr />
+					<hr />
 
-					  <h2>ホームポイント</h2>
+					<div class="main-text">
+
+					  	<h2>ホームポイント</h2>
 						<p>ホームポイントを設定することで、標準リスポーン地点の固定ができます。</p>
 						<p>ベッドやリスポーンアンカーが無くても拠点にリスポーン可能です。</p>
 						<p>また、ホームポイントにはどこからでもテレポート可能です。</p>
+
 						<h3>ホームポイント関連コマンド</h3>
 						<p class="commands">/sethome</p>
 						<p>ホームポイントを設定します。</p>
@@ -106,6 +84,7 @@
 						<p>このサーバーには椅子プラグインが導入されているため、階段ブロックやハーフブロックに右クリックで座ることができます。</p>
 						<p>また、コマンドを使用することでその他ブロックにも座ることができます。</p>
 						<p>全てスニーク(Shiftキー)することで解除できます。</p>
+						
 						<h3>椅子プラグイン関連コマンド</h3>
 						<p class="commands">/sit</p>
 						<p>自分の真下にあるブロックに座ります。</p>
@@ -124,12 +103,16 @@
 						<p>コマンドを使用することで、チェストやドアを個別に保護することができます。</p>
 						<p>ホッパーの接続可否やレッドストーン信号に反応するかなども細かく設定可能です。</p>
 						<p>コマンド入力後、設定したいブロックをクリック(左右どちらも可)することで設定できます。</p>
+						<br />
 						<p>設定可能なのは</p>
-						<p class="important">　◇チェスト・樽・シュルカーボックス・かまど系統・ドロッパー・ディスペンサー等アイテム保持可能なブロック</p>
-						<p>　　(ホッパーには設定できませんのでご注意ください。)</p>
-						<p class="important">　◇各種ドア・トラップドア・フェンスゲート・看板</p>
-						<p>　　(鉄ドアにも設定可、手で開閉できるようになります。看板に設定するとエレベーターの階層変更を制限できます。)</p>
-						<p>コマンド入力後、設定したいブロックをクリック(左右どちらも可)することで設定できます。</p>
+						<br />
+						<p class="important">チェスト・樽・シュルカーボックス・かまど系統・ドロッパー・ディスペンサー等アイテム保持可能なブロック</p>
+						<p>(ホッパーには設定できませんのでご注意ください。)</p>
+						<p class="important">各種ドア・トラップドア・フェンスゲート・看板</p>
+						<p>(鉄ドアにも設定可、手で開閉できるようになります。看板に設定するとエレベーターの階層変更を制限できます。)</p>
+						<br />
+						<p>のような機能ブロックです。</p>
+
 						<h3>チェスト・ドアの保護関連コマンド</h3>
 						<p class="commands">/cpublic</p>
 						<p>対象ブロックを破壊できないようにします。全体共有チェストに最適です。</p>
@@ -166,10 +149,11 @@
 
 						<hr />
 
-					  <h2 id="wg">エリアの保護</h2>
+					  	<h2 id="wg">エリアの保護</h2>
 						<p>このサーバーにはWorldGuardが導入されており、Region機能でエリアの保護が可能です。</p>
-						<p class="important">1度に保護可能な範囲は100,000ブロック、1プレイヤーの最大保護数は100となっています。(2022/09/19現在)</p>
+						<p class="important">1度に保護可能な範囲は100,000ブロック、1プレイヤーの最大保護数は100となっています。(2024/09/19現在)</p>
 						<p>基本的な使用方法については「建築物・チェスト等の保護方法」もご覧ください。</p>
+						
 						<h3>エリアの保護関連コマンド</h3>
 						<p class="commands">//pos1 [x座標,y座標,z座標]</p>
 						<p>選択範囲の地点1を設定します。(木の斧左クリック同様です。)</p>
@@ -243,9 +227,7 @@
 		</div>
 
 		<div class="sidemenuparent">
-
-			<script src="/menu.js"></script>
-
+			<script src="../../menu.js"></script>
 		</div>
 
 	</div>
@@ -256,7 +238,7 @@
 			<div class="footer-1">
 
 				<div class="footer-child">
-					<p>&copy;2022 おしゃサーバー</p>
+					<p>&copy; 2024 おしゃサーバー</p>
 				</div>
 
 				<div class="footer-child">
@@ -266,6 +248,6 @@
 			</div>
 		</div>
 	</div>
-
+  
 </body>
 </html>

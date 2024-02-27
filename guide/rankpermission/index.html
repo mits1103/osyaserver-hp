@@ -4,101 +4,122 @@
   <meta charset="utf-8">
   <title>ランク制度とコマンド権限 - おしゃサーバー</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../src/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../src/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese">
 </head>
+
 <body>
-  <div class="header">
-  <div class="header-text">
-    <a href="../../"><h1>おしゃさーばー</h1></a>
-  </div>
-  <div class="nav">
-  <div id="nav-drawer">
-    <input id="nav-input" type="checkbox" class="nav-unshown">
-    <label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
-    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-    <div id="nav-content">
-      <div class="menu-title">
-        <h3>メニュー</h3>
-      </div>
-        <script src="/menu.js"></script>
-    </div>
-  </div>
-</div>
-  <div class="header-btn">
-    <a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED</a>
-  </div>
-</div>
-  <br>
-  <br>
+
+	<div class="header">
+
+		<div class="header-text">
+	  		<a href="../../"><h1>おしゃサーバー</h1></a>
+		</div>
+
+		<div class="nav">
+			<div id="nav-drawer">
+				<input id="nav-input" type="checkbox" class="nav-unshown">
+				<label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
+				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<div id="nav-content">
+
+			    	<div class="menu-title">
+			      		<h3>メニュー</h3>
+			    	</div>
+			    	<script src="../../menu.js"></script>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-btn">
+			<a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED!</a>
+		</div>
+
+	</div>
+
   <div class="title">
-  <a href="../../">HOME</a> > <a href="../">UserGuide</a> > ランク制度とコマンド権限
-  <br>
-  <br>
-  <h1>ランク制度とコマンド権限</h1>
-  <br>
-  <hr>
+    <a href="../../">HOME</a> > <a href="../">UserGuide</a> > ランクと権限
+    <h1>ランク制度とコマンド権限</h1>
+    <hr>
   </div>
+
   <div class="mainparent">
-  <div class="mainpageparent">
-  <div class="mainpage">
-    <br>
-    <br>
-  <div class="main">
-  <div class="main-title1">
-    <h2>プレイヤーランクについて</h2>
-  </div>
-  <br>
-  <div class="main-text">
-    おしゃサーバーでは、初回ログインからの累積プレイ時間に応じてランクアップし権限を付与するランクシステムを導入しております。<br>
-    初期ユーザーによるスパムを防止し、既存のプレイヤー様は時間経過により使えるコマンドが増えるなどの特典を得られます。<br>
-    <br>
-    <h2>プレイ時間の表示</h2><br>
-    <br>
-    <div class="picture">
-      <img src="login.png"><br>
+    <div class="mainpageparent">
+      <div class="mainpage">
+        <div class="main">
+
+          <div class="main-title1">
+            <h2>プレイヤーランクについて</h2>
+            <p>おしゃサーバーでは、初回ログインからの累積プレイ時間に応じてランクアップし権限を付与するランクシステムを導入しております。</p>
+            <p>初期ユーザーによるスパムを防止し、既存のプレイヤー様は時間経過により使えるコマンドが増えるなどの特典を得られます。</p>
+          </div>
+
+          <hr />
+          
+          <div class="main-text">
+            <h2>プレイ時間の表示</h2>
+            <div class="picture">
+              <img src="login.png">
+            </div>
+            <br>
+            <p>サーバーにログインすると、これまでの累積プレイ時間がチャット欄に表示されます。</p>
+            <p>これは、クライアント側で保存されている「統計」データとは別の物であり、サーバー側で独自に計算されています。</p>
+            <p>AFKを検知するため、放置時間などはカウントされないことがあります。</p>
+            
+            <h2>プレイ時間とランク</h2>
+            <table class="ranks">
+              <tr>
+                <th>ランク</th><th>プレイ時間</th><th>特徴</th>
+              </tr>
+              <tr>
+                <td>Default</td><td>～30分</td><td>バニラ同様の権限です。</td>
+              </tr>
+              <tr>
+                <td>Beginner（初心者）</td><td>30分～3時間</td><td>チェスト保護が可能になります。</td>
+              </tr>
+              <tr>
+                <td>Resident（居住者）</td><td>3時間～29日間</td><td>領域保護が可能になります。</td>
+              </tr>
+              <tr>
+                <td style="background:gold;">Trusted（信頼されたユーザ）</td><td>30日以上</td><td>特典・権限は今後実装予定です。</td>
+              </tr>
+            </table>
+            <!--
+            <div class="yakushoku">
+              <p>Default ログイン後30分間はこの権限です。バニラ同様の権限です。</p>
+              <p>Beginner（初心者） 30分後～3時間の権限です。チェスト保護ができるようになります。</p>
+              <p>Resident（居住者） 3時間～29日間の権限です。領域保護が可能になります。</p>
+              <p>Trusted（信頼されたユーザ）30日分以上の時間をプレイすると信頼されたユーザーになります。特典・権限は今後実装予定です。</p>
+            </div>
+            -->
+          </div>
+          
+        </div>
+      </div>
     </div>
-    <br>
-    サーバーにログインすると、これまでの累積プレイ時間がチャット欄に表示されます。<br>
-    これは、クライアント側で保存されている「統計」データとは別の物であり、サーバー側で独自に計算されています。<br>
-    AFKを検知するため、放置時間などはカウントされないことがあります。<br>
-    <br>
-    <br>
-    <h2>プレイ時間とランク</h2><br>
-    <br>
-    <div class="yakushoku">
-      <hr>
-      <p>Default　ログイン後30分間はこの権限です。バニラ同様の権限です。</p>
-      <hr>
-      <p>Beginner（初心者） 30分後～3時間の権限です。チェスト保護ができるようになります。</p>
-      <hr>
-      <p>Resident（居住者)　3時間～7日間の権限です。領域保護が可能になります。</p>
-      <hr>
-      <p>Trusted（信頼されたユーザ）7日分以上の時間をプレイすると信頼されたユーザーになります。特典・権限は今後実装予定です。</p>
-      <hr>
-      <br>
-      <br>
+    <div class="sidemenuparent">
+      <script src="../../menu.js"></script>
     </div>
   </div>
-</div>
-</div>
-</div>
-<div class="sidemenuparent">
-  <script src="/menu.js"></script>
-</div>
-</div>
-  <br>
-  <br>
+
   <div class="footer">
     <div class="footer-text">
-      <a href="../../"><h1>おしゃさーばー</h1><a>
+      <a href="../../"><h1>おしゃサーバー</h1></a>
       <div class="footer-1">
-        <div class="footer-child"><p>©2016-2020 OsyaServer.</p></div>
-        <div class="footer-child"><a href="../../term">利用規約</a></div>
+
+        <div class="footer-child">
+          <p>&copy; 2024 おしゃサーバー</p>
+        </div>
+
+        <div class="footer-child">
+          <a href="../../term">利用規約</a>
+        </div>
+
       </div>
     </div>
   </div>
+
 </body>
 </html>

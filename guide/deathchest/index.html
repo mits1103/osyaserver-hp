@@ -4,104 +4,119 @@
   <meta charset="utf-8">
   <title>死亡チェストについて - おしゃサーバー</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/src/reset.css">
-  <link rel="stylesheet" type="text/css" href="/src/index.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../src/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../src/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese">
 </head>
+
 <body>
-  <div class="header">
-  <div class="header-text">
-    <a href="../../"><h1>おしゃサーバー</h1></a>
-  </div>
-  <div class="nav">
-  <div id="nav-drawer">
-    <input id="nav-input" type="checkbox" class="nav-unshown">
-    <label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
-    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-    <div id="nav-content">
-      <div class="menu-title">
-        <h3>メニュー</h3>
-      </div>
-        <script src="/menu.js"></script>
-    </div>
-  </div>
-</div>
-  <div class="header-btn">
-    <a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED</a>
-  </div>
-</div>
-  <br>
-  <br>
+
+	<div class="header">
+
+		<div class="header-text">
+	  		<a href="../../" title="トップページに戻る"><h1>おしゃサーバー</h1></a>
+		</div>
+
+		<div class="nav">
+			<div id="nav-drawer">
+				<input id="nav-input" type="checkbox" class="nav-unshown">
+				<label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
+				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<div id="nav-content">
+
+			    	<div class="menu-title">
+			      		<h3>メニュー</h3>
+			    	</div>
+			    	<script src="../../menu.js"></script>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-btn">
+			<a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED!</a>
+		</div>
+
+	</div>
+
   <div class="title">
-  <a href="../../">HOME</a> > <a href="../">UserGuide</a> > 死亡チェストについて
-  <br>
-  <br>
-  <h1>死亡チェストについて</h1>
-  <br>
-  <hr>
+    <a href="../../">HOME</a> > <a href="../">UserGuide</a> > 死亡チェストについて
+    <h1>死亡チェストについて</h1>
+    <hr />
   </div>
+
   <div class="mainparent">
-  <div class="mainpageparent">
-  <div class="mainpage">
-    <br>
-    <br>
-  <div class="main">
-  <div class="main-title1">
-    <h2>[新機能] あなたの持ち物を守ります！</h2>
-  </div>
-  <br>
-  <div class="main-text">
-    おしゃサーバーでは、ゲーム内で死亡した際にアイテムをチェストに保管したり、ゲーム内通貨「しゃす」を使用して死亡場所へのテレポートなどが可能になりました！<br>
-    ディメンション、ワールドにかかわらず使用できるようになりましたので、いままで以上に安心してプレイしていただけます。<br>
-    <br>
-    <h2>死亡時の操作</h2>
-    死亡すると、自動的にチェストが生成され死亡時に保持していた持ち物が格納されます。<br>
-    チェストは死亡後5分間保持され、時間切れになるとチェストが消滅し中身が放出されます。<br>
-    <br>
-    <div class="picture">
-      <img src="death1.png"><br>
-    </div>
-    <br>
-    死亡した場所などの情報を確認できるほか、死亡地点へワープしたりチェストを今いる場所に取り寄せたりできます。<br>
-    <h3>死亡地点へワープ</h3><br>
-    <strong>[死亡地点へワープ]</strong>をクリックすると死亡した地点へワープしチェストを回収することができます。<br>
-    利用料金は <strong>4,000しゃす</strong> です。<br>
-    コマンド <strong>/actp</strong> でも同様の操作が可能です。<br>
-    <h3>チェストを取り寄せ</h3><br>
-    <strong>[チェストを取り寄せ]</strong>をクリックすると今いる場所にチェストを取り寄せることができます。<br>
-    利用料金は <strong>5,000しゃす</strong> です。<br>
-    コマンド <strong>/acfetch</strong> でも同様の操作が可能です。<br>
-    <h3>保護解除</h3><br>
-    <strong>[保護解除]</strong>をクリックすると誰でもチェストを開けられる状態になります。<br>
-    死亡地点の近くにいる友達に代理で回収してもらう時などに使用してください。<br>
-    コマンド <strong>/acunlock</strong> でも同様の操作が可能です。<br>
-    <br>
-    <h2>アイテムを回収</h2>
-    死亡地点に生成されたチェストは、クリックすることで回収することができます。<br><br>
-    <div class="picture">
-      <img src="death2.jpg"><br>
-    </div><br>
+    <div class="mainpageparent">
+      <div class="mainpage">
+        <div class="main">
 
+          <div class="main-title1">
+            <h2>[新機能] あなたの持ち物を守ります！</h2>
+            <p>おしゃサーバーでは、ゲーム内で死亡した際にアイテムをチェストに保管したり、ゲーム内通貨「しゃす」を使用して死亡場所へのテレポートなどが可能になりました！</p>
+            <p>ディメンション、ワールドにかかわらず使用できるようになりましたので、いままで以上に安心してプレイしていただけます。</p>
+            <p>ちなみにエンドで奈落に落ちた場合でも、y1地点にチェストが生成されるので即ロストの心配はありません(取り寄せがおすすめです)。</p>
+          </div>
+          
+          <hr />
 
-  </div>
-</div>
-</div>
-</div>
-<div class="sidemenuparent">
-  <script src="/menu.js"></script>
-</div>
-</div>
-  <br>
-  <br>
-  <div class="footer">
-    <div class="footer-text">
-      <a href="../../"><h1>おしゃサーバー</h1><a>
-      <div class="footer-1">
-        <div class="footer-child"><p>©2022おしゃサーバー</p></div>
-        <div class="footer-child"><a href="../../term">利用規約</a></div>
+          <div class="main-text">
+            <h2>死亡時の操作</h2>
+            <p>死亡すると、自動的にチェストが生成され死亡時に保持していた持ち物が格納されます。</p>
+            <p>チェストは死亡後5分間保持され、時間切れになるとチェストが消滅し中身が放出されます。</p>
+            <div class="picture">
+              <img src="death1.png">
+            </div>
+            <br>
+            <p>死亡した場所などの情報を確認できるほか、死亡地点へワープしたりチェストを今いる場所に取り寄せたりできます。</p>
+
+            <h3>死亡地点へワープ</h3>
+            <p><strong>[死亡地点へワープ]</strong>をクリックすると死亡した地点へワープしチェストを回収することができます。</p>
+            <p>利用料金は <strong>4,000しゃす</strong> です。</p>
+            <p>コマンド <strong>/actp</strong> でも同様の操作が可能です。</p>
+
+            <h3>チェストを取り寄せ</h3>
+            <p><strong>[チェストを取り寄せ]</strong>をクリックすると今いる場所にチェストを取り寄せることができます。</p>
+            <p>利用料金は <strong>5,000しゃす</strong> です。</p>
+            <p>コマンド <strong>/acfetch</strong> でも同様の操作が可能です。</p>
+
+            <h3>保護解除</h3>
+            <p><strong>[保護解除]</strong>をクリックすると誰でもチェストを開けられる状態になります。</p>
+            <p>死亡地点の近くにいる友達に代理で回収してもらう時などに使用してください。</p>
+            <p>コマンド <strong>/acunlock</strong> でも同様の操作が可能です。</p>
+            
+            <h2>アイテムを回収</h2>
+            <p>死亡地点に生成されたチェストは、クリックすることで回収することができます。</p>
+            <div class="picture">
+              <img src="death2.jpg">
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
+
+    <div class="sidemenuparent">
+      <script src="../../menu.js"></script>
+    </div>
+
   </div>
+
+	<div class="footer">
+		<div class="footer-text">
+			<a href="../../"><h1>おしゃサーバー</h1></a>
+			<div class="footer-1">
+
+				<div class="footer-child">
+					<p>&copy; 2024 おしゃサーバー</p>
+				</div>
+
+				<div class="footer-child">
+					<a href="../../term">利用規約</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+  
 </body>
 </html>

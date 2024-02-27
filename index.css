@@ -297,6 +297,7 @@ border-bottom: solid 3px #516ab6;
 .points {
   display: inline-block;
   padding: 20px;
+  vertical-align: top;
 }
 
 .point-icon {
@@ -312,6 +313,10 @@ border-bottom: solid 3px #516ab6;
   font-size: 18px;
   max-width: 250px;
   line-height: 1.2em;
+}
+
+.point-text span {
+  display: inline-block;
 }
 
 .menu {
@@ -434,16 +439,16 @@ border-bottom: solid 3px #516ab6;
 }
 
 .footer-child p {
-  color: #fff;
-  font-size: 20px;
+  color: #aaa;
+  font-size: 16px;
   margin: 0px 20px;
   width: 250px;
 }
 
 .footer-child a {
-  color: #fff;
+  color: #aaa;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0px 20px;
   width: 70px;
 }

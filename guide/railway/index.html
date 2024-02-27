@@ -4,118 +4,201 @@
   <meta charset="utf-8">
   <title>鉄道のご案内 - おしゃサーバー</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../src/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../src/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese">
 </head>
+
 <body>
-  <div class="header">
-  <div class="header-text">
-    <a href="../../"><h1>おしゃさーばー</h1></a>
-  </div>
-  <div class="nav">
-  <div id="nav-drawer">
-    <input id="nav-input" type="checkbox" class="nav-unshown">
-    <label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
-    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-    <div id="nav-content">
-      <div class="menu-title">
-        <h3>メニュー</h3>
-      </div>
-        <script src="/menu.js"></script>
-    </div>
-  </div>
-</div>
-  <div class="header-btn">
-    <a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED</a>
-  </div>
-</div>
-  <br>
-  <br>
+
+	<div class="header">
+
+		<div class="header-text">
+	  		<a href="../../"><h1>おしゃサーバー</h1></a>
+		</div>
+
+		<div class="nav">
+			<div id="nav-drawer">
+				<input id="nav-input" type="checkbox" class="nav-unshown">
+				<label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
+				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<div id="nav-content">
+
+			    	<div class="menu-title">
+			      		<h3>メニュー</h3>
+			    	</div>
+			    	<script src="../../menu.js"></script>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-btn">
+			<a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED!</a>
+		</div>
+
+	</div>
+
   <div class="title">
-  <a href="../../">HOME</a> > <a href="../">UserGuide</a> > 鉄道のご案内
-  <br>
-  <br>
-  <h1>鉄道のご案内</h1>
-  <br>
-  <hr>
+    <a href="../../">HOME</a> > <a href="../">UserGuide</a> > 鉄道のご案内
+    <h1>鉄道のご案内</h1>
+    <hr>
   </div>
+
   <div class="mainparent">
-  <div class="mainpageparent">
-  <div class="mainpage">
-    <br>
-    <br>
-  <div class="main">
-  <div class="main-title1">
-    ワールド内の鉄道路線の情報
-  </div>
-  <br>
-  <div class="main-text">
-    このページではワールド内の鉄道路線に関して記載しています。<br>
-    各駅の詳しい情報はWikiをご覧ください。<br>
-    <br>
-    <br>
-    <h2>路線図</h2>
-    <br>
-    <div class="picture">
-      <img src="path84936.png"><br>
-    </div>
-    <br>
-    (注意)建設中の路線を含む場合があります。また、最新の情報を反映していない可能性があります。<br>
-    <br>
-    <br>
-    <h2>運賃計算について</h2>
-    <h3>運賃制度</h3>
-    おしゃサーバーではリアリティある経済の一要素として鉄道に距離料金を導入しています。<br>
-    安心してください、サーバーに参加すると初期状態からいくらか残高がありますから初期の移動は問題なく行えます。<br>
-    <br>
-    <h3>距離料金</h3>
-    1kmまで<strong>150しゃす</strong>
-    2kmまで<strong>200しゃす</strong>
-    3kmまで<strong>250しゃす</strong>
-    4kmまで<strong>300しゃす</strong>
-    5kmまで<strong>350しゃす</strong>
-    6kmまで<strong>400しゃす</strong>
-    7kmまで<strong>450しゃす</strong>
-    8kmまで<strong>500しゃす</strong>
-    9kmまで<strong>550しゃす</strong>
-    10kmまで<strong>600しゃす</strong>
-    <br>
-    これらの料金及び計算方法は予告なく変更することがあります。
-    <br>
-    <h2>路線情報</h2>
-    <h3>公営鉄道</h3>
-    この項ではサーバー運営によって建設・運営されている公営鉄道の路線の情報を記載しています。<br>
-    <h3>中央線・東部中央線</h3>
-    ワールド内を東西に貫く路線です。複々線による快速運転を行っています。快速のみが中央線/東部中央線間の直通運転ができます。
-    <br>
-    <h3>南北線</h3>
-    中央市街駅を起点として南北にそれぞれ伸びる路線です。中央線同様全線複々線の高規格路線でワールド内の輸送の大動脈です。<br>
-    <br>
-    <h3>メサ東線</h3>
-    広大なメサバイオームの北東部の街と街をつなぐ路線です。当路線は全線150しゃすで乗車でき、他路線からの連続した運賃計算はできません。(改札を出る必要があります)
-    <br>
-    <h3>松山線</h3>
-    砂漠ターミナル駅を起点とし南方面に伸びる路線です。沿線にはなにもありません。
-  </div>
-</div>
-</div>
-</div>
-<div class="sidemenuparent">
-  <script src="/menu.js"></script>
-</div>
-</div>
-  <br>
-  <br>
-  <div class="footer">
-    <div class="footer-text">
-      <a href="../../"><h1>おしゃさーばー</h1><a>
-      <div class="footer-1">
-        <div class="footer-child"><p>©2016-2020 OsyaServer.</p></div>
-        <div class="footer-child"><a href="../../term">利用規約</a></div>
+    <div class="mainpageparent">
+      <div class="mainpage">
+        <div class="main">
+
+          <div class="main-title1">
+            <h2>ワールド内の鉄道路線の情報</h2>
+            <p>このページではワールド内の鉄道路線に関して記載しています。</p>
+            <p><strong>このページの内容は建設中の路線を含む場合があります。また、最新の情報を反映していない可能性があります。</strong></p>
+            <p><a href="https://maps.osyaserver.com/?worldname=world&mapname=flat&zoom=0&x=1584&y=64&z=-176" title="Dynmap" target="_blank">Dynmap</a>も併せてご確認ください。</p>
+          </div>
+
+          <hr />
+        
+          <div class="main-text">
+            <h2>路線図</h2>
+            <p>現在は砂漠ターミナル周辺の路線が一部変更されています。ご注意ください。</p>
+            <div class="picture railway-map">
+              <img src="./railway230603_compressed.webp">
+            </div>
+            
+            <h2>自動化路線の乗車方法について</h2>
+            <h3>乗車時</h3>
+            <p>ホームに設置されている感圧板もしくはボタンを操作してください。白は各駅停車(1両)、緑は快速(3両)です。</p>
+            <p>少し経つと発車するので、乗り遅れに注意してください。</p>
+            
+            <h3>降車時</h3>
+            <p>Shiftキーなどで降りてください。数秒経つと発車するので乗り過ごしに注意してください。</p>
+            <p>乗客がいない車両は自動で回収されるため、手動での回収は不要です。</p>
+            
+            <h2>自動化されていない路線に乗車される際の注意点</h2>
+            <p>自動化されていない路線では、車両をレールに残したままにせず必ず回収してください。</p>
+            <p>レール上に車両が残っていると事故の原因となります。</p>
+            
+            <h2>運賃計算について</h2>
+            <h3>運賃制度</h3>
+            <p>おしゃサーバーではリアリティある経済の一要素として鉄道に距離料金を導入しています。</p>
+            <p>安心してください、サーバーに参加すると初期状態からいくらか残高がありますから初期の移動は問題なく行えます。</p>
+            <p><strong>なお、2024年3月現在、運賃の徴収は行っておりません。</strong></p>
+            
+            <h3>距離料金</h3>
+            <div class="fares">
+              <div class="fare">1kmまで<br><strong>150しゃす</strong></div>
+              <div class="fare">2kmまで<br><strong>200しゃす</strong></div>
+              <div class="fare">3kmまで<br><strong>250しゃす</strong></div>
+              <div class="fare">4kmまで<br><strong>300しゃす</strong></div>
+              <div class="fare">5kmまで<br><strong>350しゃす</strong></div>
+              <div class="fare">6kmまで<br><strong>400しゃす</strong></div>
+              <div class="fare">7kmまで<br><strong>450しゃす</strong></div>
+              <div class="fare">8kmまで<br><strong>500しゃす</strong></div>
+              <div class="fare">9kmまで<br><strong>550しゃす</strong></div>
+              <div class="fare">10kmまで<br><strong>600しゃす</strong></div>
+            </div>
+            <br>
+            <p>これらの料金及び計算方法は予告なく変更することがあります。</p>
+
+            <hr />
+            
+            <h2>路線情報(公営鉄道)</h2>
+            <p>この項では、サーバー運営によって建設・運営されている公営鉄道路線の情報を記載しています。</p>
+
+            <h3>中央線・東部中央線</h3>
+            <p>ワールド内を東西に貫く路線です。複々線による快速運転を行っています。快速のみが中央線/東部中央線間の直通運転ができます。</p>
+            
+            <h3>南北線</h3>
+            <p>中央市街駅を起点として南北にそれぞれ伸びる路線です。中央線同様全線複々線の高規格路線でワールド内の輸送の大動脈です。</p>
+            
+            <h3>中央環状線</h3>
+            <p>ワールド中央から半径約1500～2000mの外周をつなぐ環状線です。快速も運行しています。</p>
+            <p>2023年末にかけて大規模な工事が実施され、線形の改良・中央線との接続の改善(停車駅が本社前駅→砂漠ターミナル駅に変更)が行われました。</p>
+            
+            <h3>メサ東線</h3>
+            <p>広大なメサバイオームの北東部の街と街をつなぐ路線です。当路線は全線150しゃすで乗車でき、他路線からの連続した運賃計算はできません。(改札を出る必要があります)</p>
+            <p>上下線が分かれている複線ですが、自動化が行われていません。(2024年3月現在。共同農場前～神殿間が廃止されるとの噂も…？)</p>
+
+            <h3>松山線</h3>
+            <p>東メサ総合駅を起点とし南方面に伸びる路線です。本社前は昔、初期スポーン地点でした。</p>
+            <p>以前は砂漠ターミナル駅を基点としたほぼ全区間が地下にある路線でしたが、中央環状線の改良工事に伴い廃線跡を活用した路線としてリニューアルしました。</p>
+            <p>ちなみにリニューアル前のアカシア地区駅(廃止済み)では当時最先端の回路制御が使われていたそう。現在は全線自動化済みです。</p>
+
+            <h3>中央線茸島支線</h3>
+            <p>中央線茸島口-茸島を結ぶ支線です。</p>
+            <p>メサ東線同様に自動化が行われておらず、こちらは単線です。(全駅が交換可能駅です)</p>
+            <p><del>営業係数ヤバそう</del></p>
+            
+            <h3>ガーディアンアクセス線(仮名)</h3>
+            <p>ガーディアントラップ「フライングガーディアン」への専用線です。</p>
+            <p>中央線(各駅停車)中島駅・島崎駅から乗り換え可能です。</p>
+            <p>単線で自動化は行われていませんが、今後自動化の予定があります。</p>
+            
+            <h3>内海線</h3>
+            <p>新ヶ丘-白樺台間を結ぶ路線で、2023年に開業しました。</p>
+            <p>随所に散りばめられた意匠が見どころです。</p>
+
+            <hr />
+            
+            <h2>路線情報(私鉄・第三セクター)</h2>
+            <p>この項では、主にプレイヤーによって建設・運営されている私鉄・3セク路線の情報を記載しています。</p>
+            <p>現存しているこれらの路線は、全て複線化されています。</p>
+
+            <h3>オアシス線(オアシス開発)</h3>
+            <p>古くから存在している路線です。砂漠ターミナル・オアシスリゾート・東メサ南の3駅に停車します。</p>
+            <p>公営メサ東線と相互直通運転を行っています。</p>
+            
+            <h3>ナルナル鉄道(成森鉄道)</h3>
+            <p>メサ中央-共同農場前(東メサ)を、メサ台地の谷間を縫うように伸びている路線です。</p>
+            <p>他の路線とは一味違う、自然の力強さを感じることができます。</p>
+            
+            <h3>西部線(SKN鉄道)</h3>
+            <p>メサを中心に、ワールド西部を運行する路線です。今後も延伸予定があります。</p>
+            <p>公営中央線の砂漠ターミナル駅・メサゲートウェイ駅から直通特急「エンドライナー」に乗るとエンドまであっという間です。</p>
+            
+            <h3>成森本線(成森鉄道)</h3>
+            <p>全区間が地下化されている路線です。2024年3月現在はメサ北湾-成鉄村谷間が運行されています。</p>
+            <p>温泉郷駅からすぐ、オウムの湯では日々の疲れを癒す天然温泉でくつろぐことができます。</p>
+            
+            <h3>白樺台急行(mrk氏)</h3>
+            <p>白樺台-中央市街間を最短72秒、乗り換え不要で結ぶ路線です。白樺台の宅地開発に伴い敷設されました。</p>
+            <p>自動化が行われており、今後も南北に向けて延伸予定があります(要出典)。略称はBX(Birch eXpress)。</p>
+            
+            <h3>東西線(SKN鉄道)</h3>
+            <p>貨物輸送を主としている路線です。アグリシティの農産物やメサ周辺の鉱石を中央市場まで運びます。</p>
+            <p>自動化は行われていませんが、急行運転が行われており一部駅は通過することができます。</p>
+
+            <hr />
+
+            <p>鉄道を活用して、快適なおしゃサーバーライフをお過ごしください。</p>
+            
+          </div>
+          
+        </div>
       </div>
     </div>
+    <div class="sidemenuparent">
+      <script src="../../menu.js"></script>
+    </div>
   </div>
+
+	<div class="footer">
+		<div class="footer-text">
+			<a href="../../"><h1>おしゃサーバー</h1></a>
+			<div class="footer-1">
+
+				<div class="footer-child">
+					<p>&copy; 2024 おしゃサーバー</p>
+				</div>
+
+				<div class="footer-child">
+					<a href="../../term">利用規約</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>

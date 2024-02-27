@@ -4,132 +4,157 @@
   <meta charset="utf-8">
   <title>セキュリティ・荒らし対策への取り組み - おしゃサーバー</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../src/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../src/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese">
 </head>
+
 <body>
-  <div class="header">
-  <div class="header-text">
-    <a href="../../"><h1>おしゃさーばー</h1></a>
-  </div>
-  <div class="nav">
-  <div id="nav-drawer">
-    <input id="nav-input" type="checkbox" class="nav-unshown">
-    <label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
-    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-    <div id="nav-content">
-      <div class="menu-title">
-        <h3>メニュー</h3>
-      </div>
-        <script src="/menu.js"></script>
-    </div>
-  </div>
-</div>
-  <div class="header-btn">
-    <a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED</a>
-  </div>
-</div>
-  <br>
-  <br>
+
+	<div class="header">
+
+		<div class="header-text">
+	  		<a href="../../"><h1>おしゃサーバー</h1></a>
+		</div>
+
+		<div class="nav">
+			<div id="nav-drawer">
+				<input id="nav-input" type="checkbox" class="nav-unshown">
+				<label id="nav-open" for="nav-input"><i class="fas fa-bars"></i></label>
+				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<div id="nav-content">
+
+			    	<div class="menu-title">
+			      		<h3>メニュー</h3>
+			    	</div>
+			    	<script src="../../menu.js"></script>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-btn">
+			<a href="https://discord.gg/6mgK3V4" class="btn-square">GET STARTED!</a>
+		</div>
+
+	</div>
+
   <div class="title">
-  <a href="../../">HOME</a> > <a href="../">UserGuide</a> > セキュリティ・荒らし対策
-  <br>
-  <br>
-  <h1>セキュリティ・荒らし対策への取り組み</h1>
-  <br>
-  <hr>
+    <a href="../../">HOME</a> > <a href="../">UserGuide</a> > セキュリティ・荒らし対策
+    <h1>セキュリティ・荒らし対策への取り組み</h1>
+    <hr>
   </div>
+
   <div class="mainparent">
-  <div class="mainpageparent">
-  <div class="mainpage">
-    <br>
-    <br>
-  <div class="main">
-  <div class="main-title1">
-    <h2>荒らし対策</h2>
-  </div>
-  <br>
-  <div class="main-text">
-    我々の一番の願いは皆様に安心しておしゃサーバーでプレイしていただくことです。<br>
-    Minecraftサーバーでの安全は荒らし対策にかかっています。<br>
-    このページではおしゃサーバーでの安全への取り組みを少しご紹介致します。
-    <br>
-    <h3>WorldGuard プラグイン</h3>
-    <img src="worldguard.PNG"><br>
-    当サーバーではWorldGuardプラグインを導入しており、TNTなどの爆発による地形破壊を無効化しております。<br>
-    また、炎の延焼も無効化しているため、荒らしだけでなく不慮の事故による火災も未然に防ぐことができます。<br>
-    もちろんWorldGuardで建築物を保護することが可能ですので、ぜひご活用ください。<br>
-    <br>
-    <h3>自動セーブ・自動バックアップ</h3>
-    おしゃサーバーでは15分に一回のオートセーブ、6時間に一回のオートバックアップを行っています。<br>
-    爆発や炎の延焼の無効化により荒らし行為は難しくなっていますが、それでも万一荒らされた場合、最大でも6時間前のデータにロールバックすることで被害を最小限に抑えられるようにしています。<br>
-    <img src="autosave.PNG"><br>
-    ↑実際のバックアップの様子<br>
-    <br>
-    <br>
-  </div>
-  <div class="main-title1">
-    <h2>大切なデータを守る取り組み</h2>
-  </div>
-  <br>
-  <div class="main-text">
-    おしゃサーバー運営部が何よりも大切にしてるものは我々と皆様の財産であるゲームデータです。<br>
-    ここではおしゃサーバーでのデータを守る技術と取り組みをご紹介します。<br>
-    <h3>サーバーSSDのRAID1によるミラーリング</h3>
-    <img src="raid1.PNG"><br>
-    おしゃサーバーではサーバー機のストレージを2台のSSDでミラーリング(RAID1)しております。<br>
-    これにより、もしも1台のSSDが故障した場合でももう1台のSSDから復旧、サービスを継続することができます。<br>
-    また、2台のSSDが同時に故障することの無いよう導入時期をずらして稼働時間に差を作っています。<br>
-    <br>
-    <br>
-    <div class="picture">
-      <img src="raidssd.JPG"><br>
+    <div class="mainpageparent">
+      <div class="mainpage">
+        <div class="main">
+          
+          <div class="main-title1">
+            <h2>荒らし対策</h2>
+            <p>我々の一番の願いは皆様に安心しておしゃサーバーでプレイしていただくことです。</p>
+            <p>Minecraftサーバーでの安全は荒らし対策にかかっています。</p>
+            <p>このページではおしゃサーバーでの安全への取り組みを少しご紹介致します。</p>
+          </div>
+
+          <hr />
+          
+          <div class="main-text">
+            <h2>WorldGuard プラグイン</h2>
+            <div class="picture">
+              <img src="worldguard.PNG">
+            </div>
+            <br />
+            <p>当サーバーではWorldGuardプラグインを導入しており、TNTなどの爆発による地形破壊を無効化しております。</p>
+            <p>また、炎の延焼も無効化しているため、荒らしだけでなく不慮の事故による火災も未然に防ぐことができます。</p>
+            <p>もちろんWorldGuardで建築物を保護することが可能ですので、ぜひご活用ください。</p>
+            <div class="button003">
+              <a href="../protection/index.html#protection-wg">建築物の保護方法</a>
+            </div>
+            
+            <h2>自動セーブ・自動バックアップ</h2>
+            <p>おしゃサーバーでは15分に一回のオートセーブ、6時間に一回のオートバックアップを行っています。</p>
+            <p>爆発や炎の延焼の無効化により荒らし行為は難しくなっていますが、それでも万一荒らされた場合、最大でも6時間前のデータにロールバックすることで被害を最小限に抑えられるようにしています。</p>
+            <div class="picture">
+              <img src="autosave.PNG">
+            </div>
+            <p>↑実際のバックアップの様子</p>
+            <br />
+          </div>
+
+          <hr />
+
+          <div class="main-title1">
+            <h2>大切なデータを守る取り組み</h2>
+            <p>おしゃサーバー運営部が何よりも大切にしているものは我々と皆様の財産であるゲームデータです。</p>
+            <p>ここではおしゃサーバーでのデータを守る技術と取り組みをご紹介します。</p>
+          </div>
+
+          <hr />
+
+          <div class="main-text">
+            <h2>サーバーSSDのRAID1によるミラーリング</h2>
+            <div class="picture">
+              <img src="raid1.PNG">
+            </div>
+            <p>おしゃサーバーではサーバー機のストレージを2台のSSDでミラーリング(RAID1)しております。</p>
+            <p>これにより、もしも1台のSSDが故障した場合でももう1台のSSDから復旧、サービスを継続することができます。</p>
+            <p>また、2台のSSDが同時に故障することの無いよう導入時期をずらして稼働時間に差を作っています。</p>
+            <div class="picture">
+              <img src="raidssd.JPG">
+            </div>
+            <p>↑実際のRAID構成済みSSD</p>
+            
+            <h2>ストレージ全体のイメージファイルの保存</h2>
+            <p>SSDのRAIDに加え、SSD全体のイメージファイルを一週間に一回、自動で生成し、専用の外付けHDDに保存しています。</p>
+            <p>これは、RAIDでは防ぐことのできない人為的なミスによるデータの消失への対策です。</p>
+            <p>データはimg形式で保存され、同容量のSSDを用意して書き込むことでいつでももとの状態に戻すことができます。</p>
+            <p>また、軽量の外付けHDDに保管しているため、万一の災害時の対応をしやすくしています。</p>
+            <div class="picture">
+              <img src="ehdd.JPG">
+            </div>
+            ↑実際のバックアップ用ディスク<br>
+
+            <h2>クラウドへのバックアップ</h2>
+            <p>遠隔地へバックアップすることで、大規模な天災等の影響を受けてもデータの損失を最小限にとどめます。</p>
+            <br />
+          </div>
+
+          <hr />
+          
+          <div class="main-title1">
+            <h2>まとめ</h2>
+          </div>
+          
+          <div class="main-text">
+            <p>この記事を通じておしゃサーバー運営部のセキュリティとデータ保護に対する情熱を感じていただければ幸いです。</p>
+            <p>今後とも皆様により安心して楽しんでいただけるよう努力してまいります。</p>
+          </div>
+
+        </div>
+      </div>
     </div>
-    ↑実際のRAID構成済みSSD<br>
-    <br>
-    <br>
-    <h3>ストレージ全体のイメージファイルの保存</h3>
-    SSDのRAIDに加え、SSD全体のイメージファイルを一週間に一回、自動で生成し、専用の外付けHDDに保存しています。<br>
-    これは、RAIDでは防ぐことのできない人為的なミスによるデータの消失への対策です。<br>
-    データはimg形式で保存され、同容量のSSDを用意して書き込むことでいつでももとの状態に戻すことができます。<br>
-    また、軽量の外付けHDDに保管しているため、万一の災害時の対応をしやすくしています。<br>
-    <br>
-    <br>
-    <div class="picture">
-      <img src="ehdd.JPG"><br>
+    <div class="sidemenuparent">
+      <script src="../../menu.js"></script>
     </div>
-    ↑実際のバックアップ用ディスク<br>
-    <br>
-    <br>
   </div>
-  <div class="main-title1">
-    <h2>まとめ</h2>
-  </div>
-  <br>
-  <div class="main-text">
-    この記事を通じておしゃサーバー運営部のセキュリティとデータ保護に対する情熱を感じていただければ幸いです。<br>
-    今後とも皆様により安心して楽しんでいただけるよう努力してまいります。<br>
-    <br>
-  </div>
-</div>
-</div>
-</div>
-<div class="sidemenuparent">
-  <script src="/menu.js"></script>
-</div>
-</div>
-  <br>
-  <br>
+
   <div class="footer">
     <div class="footer-text">
-      <a href="../../"><h1>おしゃさーばー</h1><a>
+      <a href="../../"><h1>おしゃサーバー</h1></a>
       <div class="footer-1">
-        <div class="footer-child"><p>©2016-2020 OsyaServer.</p></div>
-        <div class="footer-child"><a href="../../term">利用規約</a></div>
+
+        <div class="footer-child">
+          <p>&copy; 2024 おしゃサーバー</p>
+        </div>
+
+        <div class="footer-child">
+          <a href="../../term">利用規約</a>
+        </div>
+
       </div>
     </div>
   </div>
+
 </body>
 </html>

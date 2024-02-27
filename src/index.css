@@ -4,7 +4,15 @@ body {
 }
 
 body hr {
-  margin: 15px 30px;
+  margin: 30px 30px;
+}
+
+h2 {
+	margin: 21.6px 0px;
+}
+
+h3 {
+	margin: 12px 0px;
 }
 
 .header a{
@@ -206,6 +214,7 @@ border-bottom: solid 3px #516ab6;
 
 .menu-title h3{
   padding: 14px;
+  margin: 0;
 }
 
 .sidemenu {
@@ -261,10 +270,12 @@ border-bottom: solid 3px #516ab6;
   color: #333333;
   width: 90%;
   margin: auto;
+  padding-top: 32px;
 }
 
 .title h1 {
   font-size: 33px;
+	padding: 16px 0px;
 }
 
 .title a {
@@ -272,6 +283,7 @@ border-bottom: solid 3px #516ab6;
 }
 
 .main {
+	padding-bottom: 64px;
   margin: 0px 15px;
 }
 
@@ -280,6 +292,15 @@ border-bottom: solid 3px #516ab6;
   font-size: 35px;
   margin: 5px;
   color: #333333;
+}
+
+.main-title1 h2 {
+	margin: 5px 0px 21px;
+}
+
+.main-title1 p {
+  font-size: 18px;
+  line-height: 1.2em;
 }
 
 .main-title2 {
@@ -304,7 +325,7 @@ border-bottom: solid 3px #516ab6;
   background: #dbebf8;/*背景色*/
   vertical-align: middle;
   border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
-  margin: 16px 0px;
+  margin: 32px 0px 16px 0px;
 }
 
 .main-text h3:before {
@@ -319,7 +340,7 @@ border-bottom: solid 3px #516ab6;
   color: #6594e0;/*文字色*/
   /*線の種類（点線）2px 線色*/
   border-bottom: dashed 2px #6594e0;
-  margin: 10px 8px;
+  margin: 32px 8px 10px 8px;
 }
 
 .main-text h4 {
@@ -377,21 +398,277 @@ border-bottom: solid 3px #516ab6;
 }
 
 .footer-child p {
-  color: #fff;
-  font-size: 20px;
+  color: #aaa;
+  font-size: 16px;
   margin: 0px 20px;
   width: 250px;
 }
 
 .footer-child a {
-  color: #fff;
+  color: #aaa;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0px 20px;
   width: 70px;
+}
+
+.picture {
+	margin: 10px;
 }
 
 .picture img {
   width: 100%;
   max-width: 700px;
+}
+
+.important {
+	font-weight: bold;
+}
+
+.button003 a {
+  background: #eee;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px auto 0 auto;
+  max-width: 260px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.button003 a:hover {
+  background: #313131;
+  color: #FFF;
+}
+
+.button003 a:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #313131;
+  border-right: 3px solid #313131;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.button003 a:hover:after {
+  border-color: #FFF;
+}
+
+/*
+|| commands
+*/
+
+.commands {
+	padding-top: 8px;
+	font-weight: bold;
+}
+
+/*
+|| rank-permission 
+*/
+
+.yakushoku h2 {
+  margin: 0px 47px;
+  font-size: 22px;
+  color: #333333;
+}
+
+.yakushoku hr {
+  margin: 10px 40px;
+}
+
+.yakushoku p {
+  margin: 0px 50px 0px 50px;
+  font-size: 19px;
+  color: #333333;
+}
+
+.busho p {
+  font-size: 35px;
+}
+
+table.ranks {
+  margin: 4px auto;
+  text-align: center;
+  border: solid 2px #333;
+  border-collapse: collapse;
+}
+
+table.ranks th, table.ranks td {
+  border: dashed 1px #666;
+  padding: 8px 12px;
+}
+
+/*
+|| railway 
+*/
+
+.railway-map img{
+  max-width: none;
+}
+
+.fares {
+  margin: 8px auto;
+}
+
+.fare {
+  display: inline-block;
+  width: 120px;
+  border: solid 1px #333;
+  margin: 4px 8px;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: #ffe88d;
+}
+
+/*
+|| guide-top 
+*/
+
+.Links {
+  margin: 0px 10px;;
+}
+
+.Links p {
+  font-size: 20px;
+  margin-left: 35px;
+}
+
+.Links a {
+  color: #11618c;
+  text-decoration: none;
+}
+
+.Links hr {
+  margin: 12px 0px;
+}
+
+/*
+|| rules 
+*/
+
+.sub-title {
+  margin :10px 30px;
+  font-size: 19px;
+}
+
+.rule {
+  margin: 20px;
+  font-size: 18px;
+  background-color: #fafafa
+}
+
+.rule-text {
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.7em;
+}
+
+.rule-text h2 {
+  margin: 36px 5px 10px 5px;
+  font-size: 22px;
+}
+
+.gen {
+  font-size: 22px;
+  margin: 30px 0px 0px 30px;
+}
+
+.applywaku {
+  padding: 0px 20px;
+}
+
+.apply input {
+  display: inline-block;
+}
+
+.apply {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #00BCD4;
+    background: #e4fcff;/*背景色*/
+    border-top: solid 6px #1dc1d6;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+
+.apply p {
+    margin: 0;
+    padding: 0;
+}
+
+.apply input {
+    margin: 0;
+    padding: 0;
+}
+
+/** チェックOFFなら非表示 */
+.toggle-term {
+  display: none;
+}
+
+/** チェックONなら表示 */
+input:checked ~ .toggle-term {
+  display: block;
+}
+
+/** チェックボックス横にラベル表示 */
+[type="checkbox"].toggle-rule {
+  position: relative;
+  padding-top: 3px;
+  width: 18px;
+  height: 18px;
+}
+
+[type="checkbox"].toggle-rule:after {
+  display: inline-block;
+  content: "上記ルールを熟読し、理解しました";
+  position: absolute;
+  width: 350px; height: 25px;
+  padding-left: 20px;
+  font-size: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/** チェックOFFなら非表示 */
+.password {
+  display: none;
+}
+
+/** チェックONなら表示 */
+input:checked ~ .password {
+  display: block;
+}
+
+/** チェックボックス横にラベル表示 */
+[type="checkbox"].toggle-term2 {
+  position: relative;
+  padding-top: 3px;
+  width: 18px;
+  height: 18px;
+}
+
+[type="checkbox"].toggle-term2:after {
+  content: "利用規約に同意します。";
+  position: absolute;
+  width: 350px; height: 25px;
+  padding-left: 20px;
+  font-size: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.password p {
+  margin:10px;
+  font-size: 15px;
 }
